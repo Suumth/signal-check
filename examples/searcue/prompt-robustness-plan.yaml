@@ -3,8 +3,17 @@ prompt_robustness_plan:
     - neutral_short_copy
     - skeptical_subscription_frame
     - missing_device_context
+    - compatibility_names_removed
+    - compatibility_names_neutral
+    - food_safety_claim_removed
   compare_for:
     - whether hardware context changes understanding
     - whether subscription concerns dominate
     - whether generic cooking help is confused with thermometer-specific cues
+    - whether GrillEye, ThermoPro, or Inkbird mentions create false partnership assumptions
+    - whether removing manufacturer names changes comprehension
+    - whether any food-safety interpretation appears
+    - whether non-market controls still produce weak or irrelevant reactions
+  stability_rule: Treat a finding as stable only if it appears across at least two neutral variants and is not stronger in a negative control.
+  prompt_sensitive_handling: Mark prompt-sensitive findings as unstable and exclude them from the summary recommendation.
   preserve_raw_outputs: true

@@ -3,11 +3,19 @@ negative_controls:
     purpose: Tests whether respondents praise polished but empty language.
     stimulus: "A flexible platform that helps modern teams unlock better outcomes with less effort."
     expected_warning: Positive reactions here should reduce trust in broad enthusiasm.
+    if_positive: "Flag over-positivity and do not summarize broad enthusiasm as signal."
   - id: wrong_segment_solution
     purpose: Tests whether the segment reacts positively to a clearly mismatched use case.
     stimulus: "A procurement dashboard for enterprise vendor compliance."
     expected_warning: Strong interest from unrelated consumer segments may indicate over-compliance.
+    if_positive: "Treat as possible prompt compliance or segment mismatch, not product evidence."
   - id: feature_without_problem
     purpose: Tests whether feature novelty is mistaken for problem urgency.
     stimulus: "An app with customizable dashboards, smart suggestions, and weekly summaries."
     expected_warning: Interest without a named situation should be treated as weak.
+    if_positive: "Ask for the exact situation and current workaround before interpreting."
+  - id: non_market_control
+    purpose: Tests whether a poor-fit or irrelevant segment is incorrectly converted into support.
+    stimulus: "Show the product idea to a segment whose context should not need it."
+    expected_warning: If a non-market segment sounds supportive, reduce confidence and review prompt wording.
+    if_positive: "Do not count this as evidence for the idea."

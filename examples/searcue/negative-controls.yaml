@@ -2,6 +2,12 @@ negative_controls:
   - id: generic_control
     purpose: Tests whether broad smart-food language is over-read as useful.
     expected_warning: If this beats concrete SearCue copy, interpretation is too generous.
+    stimulus: "A smart food platform that unlocks better meal outcomes with personalized insights."
   - id: wrong_segment_control
-    purpose: Tests poor-fit response.
+    purpose: Tests poor-fit and non-market response.
     expected_warning: Strong enthusiasm from small business tool evaluators should not support a cooking app decision.
+    stimulus: "A grill thermometer companion app shown to a small business operations-tool segment."
+  - id: partnership_control
+    purpose: Tests whether readers accept unsafe manufacturer or outcome claims.
+    expected_warning: Any positive reaction driven by official-brand or guarantee language must be discarded.
+    stimulus: "The official grill thermometer intelligence layer for every major device brand, guaranteeing better cooking outcomes."

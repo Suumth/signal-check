@@ -26,3 +26,21 @@ dimensions:
         description: Trust depends on clear limits and user control.
       - label: low
         description: The respondent accepts cues as a helper, not an authority.
+  - id: compatibility_clarity
+    name: Compatibility clarity
+    anchors:
+      - label: unclear
+        description: The respondent assumes a manufacturer partnership, official integration, or device guarantee.
+      - label: partial
+        description: The respondent understands compatibility is relevant but still asks which devices are supported.
+      - label: bounded
+        description: The respondent understands manufacturer names only as neutral beta or compatibility context.
+  - id: real_world_next_step
+    name: Real-world next step
+    anchors:
+      - label: missing
+        description: The reaction does not suggest a concrete next test.
+      - label: plausible
+        description: The reaction points to a small comprehension or outreach test.
+      - label: concrete
+        description: The reaction identifies a reachable segment, material, and testable uncertainty.

@@ -3,9 +3,16 @@ results:
     stimulus_id: searcue_short
     dimension_id: comprehension
     anchor: concrete
-    evidence: "Names thermometer alerts and the moment near target temperature."
-    counter_evidence: "Needs clarity that cues are a helper, not an authority."
+    evidence: "Names thermometer alerts, pull timing, grill opening, and rest timer moments."
+    counter_evidence: "Needs clarity that cues are a helper, not an authority over the probe or cook."
     uncertainty: "Only a concept reaction; no live cook observed."
+  - segment_id: app_store_shoppers
+    stimulus_id: searcue_compatibility_note
+    dimension_id: compatibility_clarity
+    anchor: partial
+    evidence: "Understands manufacturer names as compatibility examples."
+    counter_evidence: "Still asks for explicit no-partnership language and screenshots."
+    uncertainty: "Compatibility assumptions may change with actual device behavior."
   - segment_id: subscription_skeptics
     stimulus_id: searcue_short
     dimension_id: urgency
@@ -20,3 +27,10 @@ results:
     evidence: "Understands category but states it is outside context."
     counter_evidence: "No adoption relevance."
     uncertainty: "Useful mainly as poor-fit control."
+  - segment_id: hardware_companion_apps
+    stimulus_id: partnership_control
+    dimension_id: trust_friction
+    anchor: blocking
+    evidence: "Official-device and guarantee wording creates manufacturer-backing assumptions."
+    counter_evidence: "This is a negative control, not production copy."
+    uncertainty: "Confirms claim language must stay bounded; does not assess demand."

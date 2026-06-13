@@ -2,7 +2,18 @@
 
 Use this folder when a needed segment is missing from `panels/general/`.
 
-A segment should describe a context, not a character. Avoid names, biographies, personality traits, and invented life stories unless they directly constrain product adoption.
+A segment should describe a context, not a character. Avoid names, biographies, personality traits, invented life stories, and ideal-customer fantasies.
+
+A useful segment names:
+
+- situation
+- problem or job
+- current alternatives
+- likely objections
+- trust needs
+- reachability
+- exclusions
+- fit type
 
 Workflow:
 
@@ -12,3 +23,5 @@ Workflow:
 4. Compare against `anti-patterns.md`.
 5. Use `claude-prompt.md` only as a drafting aid.
 6. Save proposed additions with `new-segment-request.md`.
+
+Do not use a new segment to make the idea look stronger. A good segment can disagree, reject, or reveal that the idea is not relevant.

@@ -1,5 +1,6 @@
 run_id: ""
 brief: product-brief.md
+purpose: "Plan a manual Product Preflight. Do not treat outputs as validation."
 segments:
   fitting:
     - panels/general/prosumer_utilities.yaml
@@ -9,11 +10,24 @@ segments:
     - panels/general/subscription_skeptics.yaml
   poor_fit:
     - panels/general/small_business_tools.yaml
+non_market_control:
+  segment: panels/general/small_business_tools.yaml
+  purpose: "Check that an irrelevant or poor-fit perspective does not become false support."
 negative_controls:
   - templates/negative-controls.yaml
 raw_response_policy:
   save_before_summary: true
   preserve_counter_evidence: true
+  separate_evidence_from_interpretation: true
+prompt_robustness:
+  plan: templates/prompt-robustness-plan.yaml
+  stable_only_if_repeated_across_variants: true
 kill_criteria:
   - ""
+claim_limits:
+  no_validated_purchase_intent: true
+  no_representative_claims: true
+  no_real_user_voices: true
+  no_demand_prediction: true
+  no_synthetic_testimonials: true
 smallest_real_anchor_required: true

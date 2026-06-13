@@ -2,18 +2,62 @@ selected_segments:
   - id: hardware_companion_apps
     role: fitting
     why: The idea depends on people who already accept software as part of a physical cooking workflow.
+    trust_needs:
+      - Clear device state and reconnect messaging.
+      - No claim that the app is more authoritative than the thermometer or cook.
+    alternatives:
+      - Manufacturer app alerts
+      - Manual timers
+      - Checking the grill directly
+    reachability:
+      - Existing Bluetooth thermometer owners in beta lists, forums, or direct outreach.
   - id: prosumer_utilities
     role: fitting
     why: These users may pay for narrow utilities when the workflow is repeated and mistake-prone.
+    trust_needs:
+      - Concrete workflow details before any pricing discussion.
+    alternatives:
+      - Notes
+      - Spreadsheets
+      - Specialist cooking apps
+    reachability:
+      - People who already track cooks or compare thermometer workflows.
   - id: consumer_apps
     role: adjacent
     why: Helps test if the idea is understandable outside the hardware-owner frame.
+    trust_needs:
+      - Simple explanation of why thermometer data matters.
+    alternatives:
+      - Generic recipe apps
+      - Kitchen timers
+    reachability:
+      - App users who cook regularly but may not own probes.
   - id: app_store_shoppers
     role: adjacent
     why: Helps assess whether the concept is clear from short app-store-style copy.
+    trust_needs:
+      - Clear screenshots and compatibility boundaries.
+    alternatives:
+      - App store search
+      - Existing thermometer companion apps
+    reachability:
+      - People comparing cooking utilities in app-store contexts.
   - id: subscription_skeptics
     role: skeptical
     why: Exposes payment and value-frequency objections.
+    trust_needs:
+      - No recurring-price assumption before repeated value is shown.
+    alternatives:
+      - Free built-in apps
+      - One-time purchase utilities
+    reachability:
+      - People who have cancelled or avoided utility subscriptions.
   - id: small_business_tools
     role: poor_fit
-    why: A poor-fit segment should not produce strong positive signal.
+    why: A non-market control should not produce strong positive signal for a home grilling app.
+    trust_needs:
+      - Not relevant; this segment is included to test over-reading.
+    alternatives:
+      - Operational tools unrelated to cooking
+    reachability:
+      - Not a target for SearCue.

@@ -2,11 +2,19 @@ id: ""
 name: ""
 fit_type: fitting
 context: ""
+problem_or_job: ""
 constraints:
   - ""
 current_workarounds:
+  - ""
+likely_objections:
+  - ""
+trust_needs:
+  - ""
+reachability:
   - ""
 exclusions:
   - ""
 bias_risks:
   - ""
+non_market_control: false
