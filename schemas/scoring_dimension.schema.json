@@ -2,14 +2,16 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://signal-check.dev/schemas/scoring_dimension.schema.json",
   "title": "Scoring dimension",
+  "description": "A dimension for structured classification against anchors. Dimensions are not product promises and must not imply absolute validation.",
   "type": "object",
-  "required": ["id", "name", "anchors"],
+  "required": ["id", "name", "description", "anchors", "interpretation_limits"],
   "properties": {
     "id": { "type": "string" },
     "name": { "type": "string" },
     "description": { "type": "string" },
     "anchors": {
       "type": "array",
+      "minItems": 2,
       "items": {
         "type": "object",
         "required": ["label", "description"],
@@ -19,6 +21,11 @@
         },
         "additionalProperties": false
       }
+    },
+    "interpretation_limits": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Limits such as no demand prediction, no purchase-probability claim, and no representative finding."
     }
   },
   "additionalProperties": false

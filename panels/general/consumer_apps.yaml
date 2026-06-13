@@ -1,14 +1,38 @@
 id: consumer_apps
 name: Consumer app evaluators
 fit_type: fitting
-context: People who try lightweight mobile or web apps for personal workflows.
+context: People who try lightweight mobile or web apps for personal workflows and decide quickly whether an app earns a place in daily use.
+problem_or_job: Decide whether a small app solves a repeated personal task better than existing habits or default tools.
 constraints:
   - Low patience for setup.
   - Compare against free habits and default apps.
+  - Need value to be visible before repeated use.
 current_workarounds:
   - Notes apps
   - Reminders
   - Screenshots
+  - Calendar entries
+likely_objections:
+  - "I can already do this manually."
+  - "This looks like another app I will forget to open."
+  - "The benefit is not frequent enough."
+trust_needs:
+  - Clear first-use value.
+  - Low setup burden.
+  - Honest limits on what the app can and cannot do.
+reachability:
+  - App beta lists
+  - Personal productivity communities
+  - Friends-of-friends who already test lightweight apps
 exclusions:
   - Enterprise buyers
   - Regulated workflow owners
+  - People evaluating internal tools
+bias_risks:
+  - Polished app language may produce shallow praise.
+  - Convenience claims may be over-read as daily need.
+non_market_control: false
+do_not_assume:
+  - Do not assume frequent use.
+  - Do not assume willingness to pay.
+  - Do not treat positive reactions as real user voices.

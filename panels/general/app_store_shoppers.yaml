@@ -1,14 +1,38 @@
 id: app_store_shoppers
 name: App store shoppers
 fit_type: adjacent
-context: People who browse app stores and decide quickly from screenshots, reviews, pricing, and category fit.
+context: People who browse app stores and decide from screenshots, pricing, reviews, category fit, and compatibility cues.
+problem_or_job: Decide whether an app is worth installing or trialing from limited store-page information.
 constraints:
   - Expect clear value before install.
   - Sensitive to subscription fatigue.
+  - Judge credibility through screenshots, pricing, permissions, and reviews.
 current_workarounds:
   - Search results
   - Store ratings
   - Trial installs
+  - Existing default apps
+likely_objections:
+  - "I cannot tell what this does from the first screen."
+  - "This looks like a subscription for a small task."
+  - "The compatibility or setup requirements are unclear."
+trust_needs:
+  - Clear category and use case.
+  - Transparent pricing and compatibility boundaries.
+  - Screenshots that show the real workflow.
+reachability:
+  - App store review analysis
+  - Public app communities
+  - Beta landing pages with install-intent follow-up
 exclusions:
   - Procurement teams
   - People evaluating internal tools
+  - Users required to install by an employer
+bias_risks:
+  - Store-page polish may hide weak problem clarity.
+  - Ratings language can trigger fake validation framing.
+non_market_control: false
+do_not_assume:
+  - Do not infer install intent from comprehension.
+  - Do not treat store-style interest as measured demand.
+  - Do not claim representative app-store behavior.

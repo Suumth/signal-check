@@ -2,17 +2,75 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://signal-check.dev/schemas/product_brief.schema.json",
   "title": "Product brief",
+  "description": "A compact brief for a manual Product Preflight. This schema records assumptions; it does not validate demand, purchase intent, or market size.",
   "type": "object",
-  "required": ["name", "one_sentence", "target_segment", "problem", "proposed_solution", "riskiest_assumption"],
+  "required": [
+    "name",
+    "one_sentence",
+    "primary_segment_assumption",
+    "problem",
+    "proposed_solution",
+    "current_alternatives",
+    "riskiest_assumption",
+    "kill_criteria",
+    "smallest_real_anchor_candidate"
+  ],
   "properties": {
-    "name": { "type": "string" },
-    "one_sentence": { "type": "string" },
-    "target_segment": { "type": "string" },
-    "problem": { "type": "string" },
-    "proposed_solution": { "type": "string" },
-    "alternatives": { "type": "array", "items": { "type": "string" } },
-    "riskiest_assumption": { "type": "string" },
-    "out_of_scope_claims": { "type": "array", "items": { "type": "string" } }
+    "name": {
+      "type": "string",
+      "description": "Product or idea name."
+    },
+    "one_sentence": {
+      "type": "string",
+      "description": "What it is, for whom, and what it helps them do."
+    },
+    "primary_segment_assumption": {
+      "type": "string",
+      "description": "The assumed segment or context. Use segment-first language, not a fictional persona."
+    },
+    "problem": {
+      "type": "string",
+      "description": "The repeated situation, job, or constraint that creates the need."
+    },
+    "proposed_solution": {
+      "type": "string",
+      "description": "The proposed workflow, behavior, or decision change."
+    },
+    "current_alternatives": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "description": "Current alternatives and manual workarounds."
+    },
+    "trust_needs": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "What would make the idea feel credible, bounded, or safe to evaluate."
+    },
+    "reachability": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Where real people in the assumed segment could be reached for a Smallest Real Anchor."
+    },
+    "riskiest_assumption": {
+      "type": "string",
+      "description": "The assumption that most needs to be challenged before building."
+    },
+    "out_of_scope_claims": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Claims this brief must not support, such as representative conclusions, real user voices, synthetic testimonials, or validated purchase intent."
+    },
+    "kill_criteria": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "description": "Pre-written criteria that would narrow, pause, or stop the idea."
+    },
+    "smallest_real_anchor_candidate": {
+      "type": "string",
+      "description": "A candidate for the smallest real-world action that could reduce uncertainty."
+    }
   },
   "additionalProperties": false
 }

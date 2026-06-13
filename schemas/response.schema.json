@@ -2,15 +2,48 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://signal-check.dev/schemas/response.schema.json",
   "title": "Response",
+  "description": "A preserved free reaction from a manual preflight. This is not a real user voice unless collected from a real person outside the synthetic workflow.",
   "type": "object",
-  "required": ["segment_id", "stimulus_id", "free_reaction"],
+  "required": ["segment_id", "stimulus_id", "free_reaction", "uncertainty"],
   "properties": {
     "segment_id": { "type": "string" },
+    "variant_id": { "type": "string" },
     "stimulus_id": { "type": "string" },
+    "response_source": {
+      "enum": ["synthetic", "real_world"],
+      "description": "Use synthetic for model-generated or desk-based reactions. Do not call synthetic responses real user voices."
+    },
     "free_reaction": { "type": "string" },
-    "questions": { "type": "array", "items": { "type": "string" } },
-    "objections": { "type": "array", "items": { "type": "string" } },
-    "evidence_fragments": { "type": "array", "items": { "type": "string" } }
+    "what_is_clear": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "what_is_confusing": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "questions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "objections": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "current_workaround": {
+      "type": "string"
+    },
+    "rejection_reasons": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "evidence_fragments": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "uncertainty": {
+      "type": "string"
+    }
   },
   "additionalProperties": false
 }

@@ -2,16 +2,76 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://signal-check.dev/schemas/audience_segment.schema.json",
   "title": "Audience segment",
+  "description": "A segment-first audience definition. This is not a persona, not a biography, and not a representative market sample.",
   "type": "object",
-  "required": ["id", "name", "fit_type", "context", "constraints", "exclusions"],
+  "required": [
+    "id",
+    "name",
+    "fit_type",
+    "context",
+    "problem_or_job",
+    "constraints",
+    "current_workarounds",
+    "likely_objections",
+    "trust_needs",
+    "reachability",
+    "exclusions",
+    "do_not_assume"
+  ],
   "properties": {
     "id": { "type": "string" },
     "name": { "type": "string" },
-    "fit_type": { "enum": ["fitting", "adjacent", "skeptical", "poor_fit"] },
-    "context": { "type": "string" },
-    "constraints": { "type": "array", "items": { "type": "string" } },
-    "current_workarounds": { "type": "array", "items": { "type": "string" } },
-    "exclusions": { "type": "array", "items": { "type": "string" } }
+    "fit_type": {
+      "enum": ["fitting", "adjacent", "skeptical", "poor_fit", "non_market_control"],
+      "description": "Role in the preflight. Use non_market_control for deliberately irrelevant or poor-fit perspectives."
+    },
+    "context": {
+      "type": "string",
+      "description": "Situation, workflow, budget, risk, or constraint defining the segment."
+    },
+    "problem_or_job": {
+      "type": "string",
+      "description": "The repeated problem, job, or moment that makes this segment relevant."
+    },
+    "constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "current_workarounds": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "likely_objections": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "trust_needs": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "reachability": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Where real people in this segment could be contacted or observed."
+    },
+    "exclusions": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "bias_risks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "non_market_control": {
+      "type": "boolean",
+      "description": "True when this segment is included to catch false support from irrelevant perspectives."
+    },
+    "do_not_assume": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Assumptions the run must not make about this segment, such as enthusiasm, willingness to pay, representativeness, or real-user evidence."
+    }
   },
   "additionalProperties": false
 }

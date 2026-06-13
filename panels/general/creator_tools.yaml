@@ -1,13 +1,37 @@
 id: creator_tools
 name: Creator tool users
 fit_type: adjacent
-context: Creators who choose tools based on output quality, workflow fit, and distribution needs.
+context: Creators who choose tools based on output quality, workflow fit, distribution needs, and whether the tool fits their existing stack.
+problem_or_job: Decide whether a new tool improves creation, editing, publishing, or reuse enough to interrupt an established workflow.
 constraints:
   - Already have established stacks.
   - Need fast path from idea to publishable asset.
+  - Care about quality, control, and exportability.
 current_workarounds:
   - Design suites
   - Templates
   - Manual production workflows
+  - Scheduling or publishing tools
+likely_objections:
+  - "This does not fit my current stack."
+  - "Output quality or control is not clear."
+  - "Switching tools would slow publishing down."
+trust_needs:
+  - Clear before-and-after workflow.
+  - Export and ownership clarity.
+  - Quality examples without exaggerated claims.
+reachability:
+  - Creator communities
+  - Newsletter operators
+  - Design or video workflow groups
 exclusions:
   - Passive content consumers
+  - Enterprise media teams with formal procurement
+bias_risks:
+  - Creators may praise novelty without adopting it.
+  - Output examples can distract from workflow fit.
+non_market_control: false
+do_not_assume:
+  - Do not assume aesthetic interest equals adoption.
+  - Do not turn generated examples into testimonials.
+  - Do not infer demand from tool curiosity.

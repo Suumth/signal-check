@@ -1,13 +1,38 @@
 id: hardware_companion_apps
 name: Hardware companion app users
 fit_type: adjacent
-context: People who use software because it improves or controls a physical product they already own.
+context: People who use software because it improves, configures, monitors, or explains a physical product they already own.
+problem_or_job: Understand whether a companion app adds useful control, status, history, or guidance beyond the device's baseline behavior.
 constraints:
   - Trust depends on device reliability.
   - Setup friction is judged harshly.
+  - Compatibility claims must be bounded and clear.
 current_workarounds:
   - Manufacturer apps
   - Manual controls
   - Paper logs
+  - Screenshots of device state
+likely_objections:
+  - "The device app already does enough."
+  - "I do not trust third-party software with device state."
+  - "Compatibility sounds unclear."
+trust_needs:
+  - Clear device and compatibility boundaries.
+  - Honest status, reconnect, and failure handling.
+  - No implied manufacturer partnership unless actually true.
+reachability:
+  - Device owner communities
+  - Beta lists for companion apps
+  - Support forums around setup or reliability issues
 exclusions:
   - Software-only shoppers
+  - People who do not own the relevant hardware
+  - Users who cannot change device software
+bias_risks:
+  - Compatibility language can imply official support.
+  - Device frustration can be mistaken for demand for a new app.
+non_market_control: false
+do_not_assume:
+  - Do not assume manufacturer partnership.
+  - Do not assume device compatibility.
+  - Do not treat a device pain point as product validation.

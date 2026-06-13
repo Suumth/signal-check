@@ -1,13 +1,37 @@
 id: subscription_skeptics
 name: Subscription skeptics
 fit_type: skeptical
-context: People who resist recurring payments unless the value is frequent, concrete, and hard to replace.
+context: People who resist recurring payments unless value is frequent, concrete, and hard to replace.
+problem_or_job: Decide whether a recurring charge is justified compared with one-time tools, free tiers, or manual workarounds.
 constraints:
   - High cancellation intent.
   - Compare against one-time purchase and free alternatives.
+  - Need repeated value before accepting account creation or billing.
 current_workarounds:
   - Manual workflows
   - Free tiers
   - Built-in OS features
+  - One-time purchase utilities
+likely_objections:
+  - "This does not happen often enough to subscribe."
+  - "A free workaround is good enough."
+  - "The product creates another account or billing surface."
+trust_needs:
+  - Clear frequency of use.
+  - Strong explanation of what cannot be solved manually.
+  - Easy cancellation or non-subscription path.
+reachability:
+  - Cancellation feedback
+  - Public subscription-fatigue discussions
+  - Users comparing paid and free alternatives
 exclusions:
   - Users with employer-paid budgets
+  - Teams where procurement absorbs the cost
+bias_risks:
+  - May reject pricing before understanding workflow value.
+  - Can over-weight cost objections for products that are not subscription-based.
+non_market_control: false
+do_not_assume:
+  - Do not treat refusal to pay as refusal of the problem.
+  - Do not infer willingness to pay from mild interest.
+  - Do not convert skepticism into demand validation.

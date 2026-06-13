@@ -1,13 +1,37 @@
 id: ai_assisted_builders
 name: AI-assisted builders
 fit_type: fitting
-context: People using AI tools to explore, prototype, or ship software and content faster.
+context: People using AI tools to explore, prototype, write, design, or ship software and content faster.
+problem_or_job: Reduce false confidence and keep AI-assisted work inspectable, editable, and grounded in real next steps.
 constraints:
   - Need guardrails against false confidence.
   - Value artifacts they can inspect and edit.
+  - Often move quickly enough to skip validation discipline.
 current_workarounds:
   - Chat threads
   - Ad hoc docs
   - Manual review checklists
+  - Lightweight project templates
+likely_objections:
+  - "This slows me down."
+  - "I already ask the model to critique the idea."
+  - "The method may add process without better decisions."
+trust_needs:
+  - Clear boundary between synthetic output and real evidence.
+  - Editable artifacts instead of hidden automation.
+  - Strong anti-claim guardrails.
+reachability:
+  - AI builder communities
+  - Indie hacker groups
+  - Product prototyping cohorts
 exclusions:
   - Teams banned from AI use
+  - Users seeking fully automated market validation
+bias_risks:
+  - May over-trust model fluency.
+  - May treat structured output as evidence.
+non_market_control: false
+do_not_assume:
+  - Do not claim AI replaces user research.
+  - Do not assume generated reactions are real user voices.
+  - Do not treat fast iteration as validation.

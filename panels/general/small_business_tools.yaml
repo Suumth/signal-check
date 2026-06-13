@@ -1,13 +1,38 @@
 id: small_business_tools
 name: Small business tool evaluators
-fit_type: skeptical
-context: Owners or operators who evaluate tools through time saved, cash impact, and operational risk.
+fit_type: poor_fit
+context: Owners or operators who evaluate tools through time saved, cash impact, operational risk, and whether the tool creates extra admin work.
+problem_or_job: Decide whether a tool improves an operational business workflow enough to justify setup, training, and ongoing attention.
 constraints:
   - Limited time for setup.
   - Avoid tools that create new admin work.
+  - Need obvious connection to revenue, cost, risk, or time saved.
 current_workarounds:
   - Email
   - Spreadsheets
   - Existing accounting or scheduling tools
+  - Manual owner-operated processes
+likely_objections:
+  - "This is not connected to my business workflow."
+  - "The setup cost is larger than the benefit."
+  - "I do not need another dashboard."
+trust_needs:
+  - Concrete operational use case.
+  - Clear time or risk reduction.
+  - Low setup and no vague productivity claims.
+reachability:
+  - Local business owner conversations
+  - Operator communities
+  - Existing customer support or sales calls
 exclusions:
   - Large enterprise buyers
+  - Consumer hobby use cases
+  - People evaluating personal productivity apps
+bias_risks:
+  - Can produce false support if asked about generic productivity.
+  - Poor-fit relevance may be over-interpreted as broad market signal.
+non_market_control: true
+do_not_assume:
+  - Do not count polite interest as product evidence.
+  - Do not generalize this segment to consumer or creator markets.
+  - Do not treat operational objections as proof the idea is bad for other segments.

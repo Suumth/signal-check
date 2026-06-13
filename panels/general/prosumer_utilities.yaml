@@ -1,13 +1,37 @@
 id: prosumer_utilities
 name: Prosumer utility buyers
 fit_type: fitting
-context: Skilled non-enterprise users who pay for focused utilities that save time or reduce mistakes.
+context: Skilled non-enterprise users who adopt focused utilities to save time, reduce mistakes, or improve a repeated workflow.
+problem_or_job: Decide whether a narrow tool improves a repeated workflow enough to replace a manual or semi-manual setup.
 constraints:
   - Need credible workflow details.
   - Prefer narrow tools over broad suites.
+  - Will compare against scripts, spreadsheets, templates, and existing specialist apps.
 current_workarounds:
   - Spreadsheets
   - Scripts
   - Specialist apps
+  - Personal checklists
+likely_objections:
+  - "This is not specific enough for my workflow."
+  - "I can build or script a rough version myself."
+  - "The tool may not handle edge cases."
+trust_needs:
+  - Clear workflow fit.
+  - Evidence that edge cases are acknowledged.
+  - Export or reversibility when possible.
+reachability:
+  - Specialist forums
+  - Indie software communities
+  - Power-user newsletters or beta groups
 exclusions:
   - Casual users with no repeated workflow
+  - Enterprise buyers with procurement requirements
+bias_risks:
+  - May over-index on configurability.
+  - May sound positive about tools without intending to adopt them.
+non_market_control: false
+do_not_assume:
+  - Do not assume technical curiosity equals demand.
+  - Do not assume willingness to pay from workflow recognition.
+  - Do not generalize this segment to casual users.

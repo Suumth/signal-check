@@ -2,14 +2,36 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://signal-check.dev/schemas/respondent_variant.schema.json",
   "title": "Respondent variant",
+  "description": "A blind segment variant for prompting. It must remain context-based and must not become a fictional person or testimonial source.",
   "type": "object",
-  "required": ["segment_id", "variant_id", "stance"],
+  "required": ["segment_id", "variant_id", "stance", "context_notes", "allowed_to_reject"],
   "properties": {
     "segment_id": { "type": "string" },
     "variant_id": { "type": "string" },
-    "stance": { "enum": ["fitting", "adjacent", "skeptical", "poor_fit"] },
-    "context_notes": { "type": "array", "items": { "type": "string" } },
-    "bias_risks": { "type": "array", "items": { "type": "string" } }
+    "stance": {
+      "enum": ["fitting", "adjacent", "skeptical", "poor_fit", "non_market_control"]
+    },
+    "context_notes": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "likely_constraints": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "likely_objections": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "bias_risks": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "allowed_to_reject": {
+      "type": "boolean",
+      "const": true,
+      "description": "Variants must be allowed to reject, ignore, or misunderstand the idea."
+    }
   },
   "additionalProperties": false
 }

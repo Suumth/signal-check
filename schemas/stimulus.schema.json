@@ -2,13 +2,25 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://signal-check.dev/schemas/stimulus.schema.json",
   "title": "Stimulus",
+  "description": "A stimulus shown during a manual Product Preflight. Stimuli should be plain enough that reactions target the idea, not polish.",
   "type": "object",
-  "required": ["id", "type", "content"],
+  "required": ["id", "type", "content", "claim_boundaries"],
   "properties": {
     "id": { "type": "string" },
-    "type": { "enum": ["brief", "landing_copy", "feature_copy", "flow", "negative_control"] },
+    "type": {
+      "enum": ["brief", "landing_copy", "feature_copy", "flow", "negative_control", "non_market_control", "compatibility_note"]
+    },
     "content": { "type": "string" },
-    "notes": { "type": "string" }
+    "notes": { "type": "string" },
+    "claim_boundaries": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Claims the stimulus must not imply, such as partnership, official integration, safety guarantee, representative evidence, or measured purchase intent."
+    },
+    "intended_uncertainty": {
+      "type": "string",
+      "description": "The uncertainty this stimulus is meant to expose."
+    }
   },
   "additionalProperties": false
 }

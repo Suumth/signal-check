@@ -2,13 +2,34 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://signal-check.dev/schemas/bias_audit.schema.json",
   "title": "Bias audit",
+  "description": "A bias audit for a manual Product Preflight. It can reduce confidence, require reruns, or stop interpretation.",
   "type": "object",
-  "required": ["prompt_bias", "segment_bias", "interpretation_bias", "mitigations"],
+  "required": [
+    "prompt_bias",
+    "segment_bias",
+    "interpretation_bias",
+    "over_positivity_risk",
+    "negative_control_failure",
+    "mitigations"
+  ],
   "properties": {
     "prompt_bias": { "type": "array", "items": { "type": "string" } },
     "segment_bias": { "type": "array", "items": { "type": "string" } },
     "interpretation_bias": { "type": "array", "items": { "type": "string" } },
-    "mitigations": { "type": "array", "items": { "type": "string" } }
+    "over_positivity_risk": { "type": "array", "items": { "type": "string" } },
+    "negative_control_failure": { "type": "array", "items": { "type": "string" } },
+    "prompt_sensitivity": { "type": "array", "items": { "type": "string" } },
+    "response_collapse": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Repeated generic reactions that erase segment differences."
+    },
+    "missing_counter_evidence": { "type": "array", "items": { "type": "string" } },
+    "mitigations": { "type": "array", "items": { "type": "string" } },
+    "confidence_after_audit": {
+      "enum": ["low", "mixed", "directional", "insufficient"],
+      "description": "Plain-language confidence category. This is not a probability or validation claim."
+    }
   },
   "additionalProperties": false
 }
