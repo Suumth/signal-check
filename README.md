@@ -119,10 +119,10 @@ Start here:
 
 1. Read `docs/quickstart.md`.
 2. Create `runs/<your-run-name>/`.
-3. Copy `templates/product-brief.md`, `templates/sampling-plan.yaml`, `templates/negative-controls.yaml`, `templates/prompt-robustness-plan.yaml`, `templates/preflight-report.md`, and `templates/smallest-real-anchor.md` into that folder.
+3. Copy the needed files from `templates/`, including `product-brief.md`, `sampling-plan.yaml`, `stimuli.yaml`, `negative-controls.yaml`, `prompt-robustness-plan.yaml`, `raw-responses.md`, `scored-results.yaml`, `bias-audit.yaml`, `preflight-report.md`, and `smallest-real-anchor.md`.
 4. Fill the product brief before selecting or generating any respondent variants.
 5. Select segment files from `panels/general/` or draft a new segment with `templates/add-segment/`.
-6. Prepare `stimuli.yaml`; use `examples/searcue/stimuli.yaml` as a shape reference.
+6. Fill `stimuli.yaml`; use `examples/searcue/stimuli.yaml` as a completed shape reference.
 7. Run the prompt sequence in `prompts/` manually and save raw outputs before summaries.
 8. Classify reactions against anchors, complete a bias audit, and write the preflight report.
 9. Decide whether the Smallest Real Anchor is concrete enough to run.

@@ -1,0 +1,49 @@
+run_id: ""
+purpose: "Audit a manual Product Preflight before summary or recommendation."
+audit:
+  over_positivity:
+    signal: ""
+    evidence:
+      - ""
+    severity: ""
+  negative_control_failure:
+    signal: ""
+    evidence:
+      - ""
+    severity: ""
+  non_market_control_failure:
+    signal: ""
+    evidence:
+      - ""
+    severity: ""
+  prompt_sensitivity:
+    signal: ""
+    evidence:
+      - ""
+    severity: ""
+  cherry_picking_risk:
+    signal: ""
+    evidence:
+      - ""
+    severity: ""
+  response_collapse:
+    signal: ""
+    evidence:
+      - ""
+    severity: ""
+  segment_coverage_issue:
+    signal: ""
+    evidence:
+      - ""
+    severity: ""
+  claim_risk:
+    signal: ""
+    evidence:
+      - ""
+    severity: ""
+recommended_action: ""
+confidence_after_audit: ""
+review_notes:
+  - "Strong audit signals should cause the result to be discarded, rerun, narrowed, or marked low confidence."
+  - "Positive reactions are not useful until negative controls and non-market controls have been checked."
+  - "Do not smooth away contradictions, weak fit, refusal, or missing counter-evidence."

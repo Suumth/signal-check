@@ -1,0 +1,24 @@
+run_id: ""
+purpose: "Prepare manual Product Preflight test materials. Stimuli are test material, not validated messages."
+stimuli:
+  - id: ""
+    type: ""
+    title: ""
+    content: ""
+    intended_use: ""
+    target_segment_assumption: ""
+    claim_limits:
+      no_validated_purchase_intent: true
+      no_representative_claims: true
+      no_real_user_voices: true
+      no_demand_prediction: true
+      no_synthetic_testimonials: true
+      no_guarantees_without_external_evidence: true
+      notes:
+        - ""
+    known_risks:
+      - ""
+review_notes:
+  - "Use plain wording so reactions target the idea, not polish."
+  - "Include weaker or bounded variants when wording might steer reactions."
+  - "Do not present a stimulus as proven, official, representative, or validated unless that evidence exists outside Signal Check."

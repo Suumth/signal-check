@@ -16,17 +16,14 @@ Copy these files into it:
 
 - `templates/product-brief.md`
 - `templates/sampling-plan.yaml`
+- `templates/stimuli.yaml`
 - `templates/negative-controls.yaml`
 - `templates/prompt-robustness-plan.yaml`
+- `templates/raw-responses.md`
+- `templates/scored-results.yaml`
+- `templates/bias-audit.yaml`
 - `templates/preflight-report.md`
 - `templates/smallest-real-anchor.md`
-
-You will also create these run artifacts manually:
-
-- `stimuli.yaml`
-- `raw-responses.md`
-- `scored-results.yaml`
-- `bias-audit.yaml`
 
 Use `examples/searcue/stimuli.yaml`, `examples/searcue/example-raw-responses.md`, `examples/searcue/example-scored-results.yaml`, and `examples/searcue/preflight-report.md` as shape references when needed.
 
@@ -39,11 +36,11 @@ Use `examples/searcue/stimuli.yaml`, `examples/searcue/example-raw-responses.md`
 5. Add or identify a non-market control when false support is a risk.
 6. Fill `runs/my-idea/negative-controls.yaml`.
 7. Fill `runs/my-idea/prompt-robustness-plan.yaml`.
-8. Create `runs/my-idea/stimuli.yaml` with one or two main stimuli and explicit claim boundaries.
+8. Fill `runs/my-idea/stimuli.yaml` with one or two main stimuli and explicit claim boundaries.
 9. Run `prompts/01-generate-blind-panel.md` manually.
-10. Run `prompts/02-elicit-neutral-reactions.md` manually and save `raw-responses.md` before any summary.
-11. Run `prompts/03-score-against-anchors.md` manually and save `scored-results.yaml`.
-12. Run `prompts/04-audit-bias.md` manually and save `bias-audit.yaml`.
+10. Run `prompts/02-elicit-neutral-reactions.md` manually and save outputs in `raw-responses.md` before any summary.
+11. Run `prompts/03-score-against-anchors.md` manually and save outputs in `scored-results.yaml`.
+12. Run `prompts/04-audit-bias.md` manually and save outputs in `bias-audit.yaml`.
 13. Run `prompts/05-summarize-without-cherry-picking.md` manually.
 14. Apply kill criteria before deciding what to keep.
 15. Complete `runs/my-idea/preflight-report.md`.

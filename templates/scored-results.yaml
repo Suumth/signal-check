@@ -1,0 +1,28 @@
+run_id: ""
+purpose: "Classify raw reactions against anchors. This is structured interpretation, not validation."
+results:
+  - segment_id: ""
+    variant_id: ""
+    stimulus_id: ""
+    dimension_id: ""
+    anchor: ""
+    evidence:
+      - ""
+    counter_evidence:
+      - ""
+    uncertainty:
+      - ""
+    confidence_note: ""
+    negative_control_relevance: ""
+    non_market_control_relevance: ""
+    reviewer_note: ""
+claim_limits:
+  no_absolute_validation: true
+  no_purchase_probability_claim: true
+  no_representative_claim: true
+  no_real_user_voice_claim: true
+  no_total_product_score: true
+review_notes:
+  - "Use anchors to organize evidence, not to prove product quality."
+  - "Keep evidence, counter-evidence, uncertainty, and confidence notes separate."
+  - "If evidence is thin or contradictory, mark the classification as ambiguous or low confidence."
