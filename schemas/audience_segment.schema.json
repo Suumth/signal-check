@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/audience_segment.schema.json",
+  "title": "Audience segment",
+  "type": "object",
+  "required": ["id", "name", "fit_type", "context", "constraints", "exclusions"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "fit_type": { "enum": ["fitting", "adjacent", "skeptical", "poor_fit"] },
+    "context": { "type": "string" },
+    "constraints": { "type": "array", "items": { "type": "string" } },
+    "current_workarounds": { "type": "array", "items": { "type": "string" } },
+    "exclusions": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

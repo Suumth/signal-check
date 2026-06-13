@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/stimulus.schema.json",
+  "title": "Stimulus",
+  "type": "object",
+  "required": ["id", "type", "content"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "enum": ["brief", "landing_copy", "feature_copy", "flow", "negative_control"] },
+    "content": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

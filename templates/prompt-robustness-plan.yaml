@@ -1,0 +1,14 @@
+prompt_robustness_plan:
+  neutral_language: true
+  free_reaction_first: true
+  avoid_purchase_questions: true
+  require_counter_evidence: true
+  rerun_variants:
+    - concise_prompt
+    - skeptical_prompt
+    - missing_context_prompt
+  compare_for:
+    - repeated confusion
+    - prompt-sensitive enthusiasm
+    - changed objections
+    - missing alternatives

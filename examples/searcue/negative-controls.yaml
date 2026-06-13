@@ -1,0 +1,7 @@
+negative_controls:
+  - id: generic_control
+    purpose: Tests whether broad smart-food language is over-read as useful.
+    expected_warning: If this beats concrete SearCue copy, interpretation is too generous.
+  - id: wrong_segment_control
+    purpose: Tests poor-fit response.
+    expected_warning: Strong enthusiasm from small business tool evaluators should not support a cooking app decision.

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/product_brief.schema.json",
+  "title": "Product brief",
+  "type": "object",
+  "required": ["name", "one_sentence", "target_segment", "problem", "proposed_solution", "riskiest_assumption"],
+  "properties": {
+    "name": { "type": "string" },
+    "one_sentence": { "type": "string" },
+    "target_segment": { "type": "string" },
+    "problem": { "type": "string" },
+    "proposed_solution": { "type": "string" },
+    "alternatives": { "type": "array", "items": { "type": "string" } },
+    "riskiest_assumption": { "type": "string" },
+    "out_of_scope_claims": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

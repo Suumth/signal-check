@@ -1,0 +1,13 @@
+id: creator_tools
+name: Creator tool users
+fit_type: adjacent
+context: Creators who choose tools based on output quality, workflow fit, and distribution needs.
+constraints:
+  - Already have established stacks.
+  - Need fast path from idea to publishable asset.
+current_workarounds:
+  - Design suites
+  - Templates
+  - Manual production workflows
+exclusions:
+  - Passive content consumers

@@ -1,0 +1,14 @@
+id: consumer_apps
+name: Consumer app evaluators
+fit_type: fitting
+context: People who try lightweight mobile or web apps for personal workflows.
+constraints:
+  - Low patience for setup.
+  - Compare against free habits and default apps.
+current_workarounds:
+  - Notes apps
+  - Reminders
+  - Screenshots
+exclusions:
+  - Enterprise buyers
+  - Regulated workflow owners

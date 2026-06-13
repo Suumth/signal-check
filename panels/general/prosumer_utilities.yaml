@@ -1,0 +1,13 @@
+id: prosumer_utilities
+name: Prosumer utility buyers
+fit_type: fitting
+context: Skilled non-enterprise users who pay for focused utilities that save time or reduce mistakes.
+constraints:
+  - Need credible workflow details.
+  - Prefer narrow tools over broad suites.
+current_workarounds:
+  - Spreadsheets
+  - Scripts
+  - Specialist apps
+exclusions:
+  - Casual users with no repeated workflow

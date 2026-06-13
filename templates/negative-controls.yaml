@@ -1,0 +1,13 @@
+negative_controls:
+  - id: vague_generic_solution
+    purpose: Tests whether respondents praise polished but empty language.
+    stimulus: "A flexible platform that helps modern teams unlock better outcomes with less effort."
+    expected_warning: Positive reactions here should reduce trust in broad enthusiasm.
+  - id: wrong_segment_solution
+    purpose: Tests whether the segment reacts positively to a clearly mismatched use case.
+    stimulus: "A procurement dashboard for enterprise vendor compliance."
+    expected_warning: Strong interest from unrelated consumer segments may indicate over-compliance.
+  - id: feature_without_problem
+    purpose: Tests whether feature novelty is mistaken for problem urgency.
+    stimulus: "An app with customizable dashboards, smart suggestions, and weekly summaries."
+    expected_warning: Interest without a named situation should be treated as weak.

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/sampling_plan.schema.json",
+  "title": "Sampling plan",
+  "type": "object",
+  "required": ["segments", "negative_controls", "kill_criteria"],
+  "properties": {
+    "segments": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 4
+    },
+    "negative_controls": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    },
+    "kill_criteria": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}

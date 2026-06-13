@@ -1,0 +1,14 @@
+id: app_store_shoppers
+name: App store shoppers
+fit_type: adjacent
+context: People who browse app stores and decide quickly from screenshots, reviews, pricing, and category fit.
+constraints:
+  - Expect clear value before install.
+  - Sensitive to subscription fatigue.
+current_workarounds:
+  - Search results
+  - Store ratings
+  - Trial installs
+exclusions:
+  - Procurement teams
+  - People evaluating internal tools

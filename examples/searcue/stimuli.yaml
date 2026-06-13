@@ -1,0 +1,10 @@
+stimuli:
+  - id: searcue_short
+    type: landing_copy
+    content: "SearCue gives short cooking cues when your thermometer data suggests it is time to sear, rest, or serve."
+  - id: searcue_workflow
+    type: feature_copy
+    content: "Start a cook, choose the cut, and get brief cue cards during the session: prep to sear, pull from heat, rest timer, serve window."
+  - id: generic_control
+    type: negative_control
+    content: "A smart food platform that unlocks better meal outcomes with personalized insights."

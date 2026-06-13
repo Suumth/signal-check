@@ -1,0 +1,22 @@
+results:
+  - segment_id: hardware_companion_apps
+    stimulus_id: searcue_short
+    dimension_id: comprehension
+    anchor: concrete
+    evidence: "Names thermometer alerts and the moment near target temperature."
+    counter_evidence: "Needs clarity that cues are a helper, not an authority."
+    uncertainty: "Only a concept reaction; no live cook observed."
+  - segment_id: subscription_skeptics
+    stimulus_id: searcue_short
+    dimension_id: urgency
+    anchor: mixed
+    evidence: "Value depends on preventing expensive mistakes often."
+    counter_evidence: "May be satisfied with self-managed timers."
+    uncertainty: "Payment posture cannot be inferred from this reaction."
+  - segment_id: small_business_tools
+    stimulus_id: searcue_short
+    dimension_id: comprehension
+    anchor: partial
+    evidence: "Understands category but states it is outside context."
+    counter_evidence: "No adoption relevance."
+    uncertainty: "Useful mainly as poor-fit control."

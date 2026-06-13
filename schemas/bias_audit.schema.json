@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/bias_audit.schema.json",
+  "title": "Bias audit",
+  "type": "object",
+  "required": ["prompt_bias", "segment_bias", "interpretation_bias", "mitigations"],
+  "properties": {
+    "prompt_bias": { "type": "array", "items": { "type": "string" } },
+    "segment_bias": { "type": "array", "items": { "type": "string" } },
+    "interpretation_bias": { "type": "array", "items": { "type": "string" } },
+    "mitigations": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,19 @@
+selected_segments:
+  - id: hardware_companion_apps
+    role: fitting
+    why: The idea depends on people who already accept software as part of a physical cooking workflow.
+  - id: prosumer_utilities
+    role: fitting
+    why: These users may pay for narrow utilities when the workflow is repeated and mistake-prone.
+  - id: consumer_apps
+    role: adjacent
+    why: Helps test if the idea is understandable outside the hardware-owner frame.
+  - id: app_store_shoppers
+    role: adjacent
+    why: Helps assess whether the concept is clear from short app-store-style copy.
+  - id: subscription_skeptics
+    role: skeptical
+    why: Exposes payment and value-frequency objections.
+  - id: small_business_tools
+    role: poor_fit
+    why: A poor-fit segment should not produce strong positive signal.

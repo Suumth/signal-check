@@ -1,0 +1,19 @@
+run_id: ""
+brief: product-brief.md
+segments:
+  fitting:
+    - panels/general/prosumer_utilities.yaml
+  adjacent:
+    - panels/general/app_store_shoppers.yaml
+  skeptical:
+    - panels/general/subscription_skeptics.yaml
+  poor_fit:
+    - panels/general/small_business_tools.yaml
+negative_controls:
+  - templates/negative-controls.yaml
+raw_response_policy:
+  save_before_summary: true
+  preserve_counter_evidence: true
+kill_criteria:
+  - ""
+smallest_real_anchor_required: true

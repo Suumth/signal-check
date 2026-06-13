@@ -1,0 +1,20 @@
+run_id: searcue-v0-example
+brief: examples/searcue/brief.md
+segments:
+  fitting:
+    - panels/general/hardware_companion_apps.yaml
+    - panels/general/prosumer_utilities.yaml
+  adjacent:
+    - panels/general/consumer_apps.yaml
+    - panels/general/app_store_shoppers.yaml
+  skeptical:
+    - panels/general/subscription_skeptics.yaml
+  poor_fit:
+    - panels/general/small_business_tools.yaml
+negative_controls:
+  - examples/searcue/negative-controls.yaml
+kill_criteria:
+  - Fitting segments must describe a concrete cooking moment in their own words.
+  - Skeptical segments must not treat the idea as just another subscription wrapper.
+  - Negative controls must not receive stronger reactions than the SearCue stimulus.
+smallest_real_anchor_required: true

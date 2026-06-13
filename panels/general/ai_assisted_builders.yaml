@@ -1,0 +1,13 @@
+id: ai_assisted_builders
+name: AI-assisted builders
+fit_type: fitting
+context: People using AI tools to explore, prototype, or ship software and content faster.
+constraints:
+  - Need guardrails against false confidence.
+  - Value artifacts they can inspect and edit.
+current_workarounds:
+  - Chat threads
+  - Ad hoc docs
+  - Manual review checklists
+exclusions:
+  - Teams banned from AI use

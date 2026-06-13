@@ -1,0 +1,107 @@
+# Signal Check
+
+Signal Check is a file-based open-source method kit for checking product ideas before building them.
+
+It helps a founder, maker, product lead, or researcher run a manual preflight against carefully chosen audience segments, neutral prompts, negative controls, and explicit kill criteria. The output is not a verdict. It is a structured way to notice weak signal, strong caveats, and the smallest real-world action worth taking next.
+
+v0.1 is intentionally not software that runs. It is a set of Markdown, YAML, JSON Schemas, prompts, templates, panels, and example artifacts.
+
+## What It Is
+
+Signal Check is a thinking tool for early product ideas. It supports a manual workflow:
+
+1. Write a compact product brief.
+2. Select segment-first panels: fitting, adjacent, skeptical, and poor-fit perspectives.
+3. Prepare neutral stimuli and negative controls.
+4. Elicit free reactions before any structured scoring.
+5. Classify reactions against explicit anchors with evidence and uncertainty.
+6. Run a bias audit.
+7. End the preflight with a Smallest Real Anchor.
+
+## What It Is Not
+
+Signal Check is not a market research replacement, not an AI oracle, not a fake-persona generator, and not a system for proving demand. It does not claim validated purchase intent, representative findings, real user voices, demand prediction, or that AI replaces user research.
+
+It is deliberately narrow: it helps you think better before you spend real build time.
+
+## Who It Is For
+
+Use Signal Check when you have an early product, feature, app, utility, or service idea and need a disciplined preflight before committing to design, code, or marketing.
+
+It is best for:
+
+- solo builders and small teams
+- product managers shaping an early concept
+- researchers preparing a real study
+- open-source maintainers testing positioning
+- AI-assisted builders who need stronger decision hygiene
+
+It is not enough when you need pricing validation, statistically defensible research, usability evidence, legal review, safety review, or launch confidence.
+
+## How A Manual Preflight Works
+
+Start with `templates/product-brief.md`. Keep the brief short and concrete. Then choose panels from `panels/general/` and copy `templates/sampling-plan.yaml`.
+
+For each run:
+
+- include at least one fitting segment
+- include at least one adjacent segment
+- include at least one skeptical segment
+- include at least one poor-fit segment
+- include negative controls
+- record free reactions before structured classification
+- document uncertainty instead of smoothing it away
+- write kill criteria before interpreting results
+- finish with `templates/smallest-real-anchor.md`
+
+## Why v0.1 Is File-Based
+
+The first version is file-based because the method matters more than automation. Files make assumptions reviewable. They keep the workflow portable, auditable, forkable, and easy to adapt without hiding judgment inside a product interface or scoring engine.
+
+There is no CLI, browser app, model integration, or automated analysis in v0.1.
+
+## SearCue Example
+
+`examples/searcue/` contains a complete example preflight for a fictional app idea. Use it as a reference for artifact shape, not as proof that the idea is good.
+
+Read it in this order:
+
+1. `examples/searcue/brief.md`
+2. `examples/searcue/sampling-plan.yaml`
+3. `examples/searcue/stimuli.yaml`
+4. `examples/searcue/example-raw-responses.md`
+5. `examples/searcue/example-scored-results.yaml`
+6. `examples/searcue/preflight-report.md`
+
+## Forbidden Claims
+
+Do not use Signal Check outputs to claim:
+
+- validated purchase intent
+- representative evidence
+- real user voices
+- predict demand
+- AI replaces user research
+- market validation
+- guaranteed willingness to pay
+- launch readiness
+- synthetic testimonials
+
+The kit may document scoring, but only as structured classification against anchors with evidence and uncertainty. Treat scoring as an organizing lens, not a product promise.
+
+## Manual Use
+
+1. Copy the relevant templates into `runs/<your-run-name>/`.
+2. Fill the product brief.
+3. Select segment files or draft a new segment with `templates/add-segment/`.
+4. Prepare stimuli and negative controls.
+5. Run the prompt sequence in `prompts/` manually.
+6. Save raw outputs before summaries.
+7. Complete a preflight report.
+8. Decide whether the Smallest Real Anchor is worth doing.
+
+Keep all generated or collected material in `runs/`. Keep shareable summaries in `reports/`.
+
+## License
+
+MIT

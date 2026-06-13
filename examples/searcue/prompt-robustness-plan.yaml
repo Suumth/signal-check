@@ -1,0 +1,10 @@
+prompt_robustness_plan:
+  rerun_variants:
+    - neutral_short_copy
+    - skeptical_subscription_frame
+    - missing_device_context
+  compare_for:
+    - whether hardware context changes understanding
+    - whether subscription concerns dominate
+    - whether generic cooking help is confused with thermometer-specific cues
+  preserve_raw_outputs: true

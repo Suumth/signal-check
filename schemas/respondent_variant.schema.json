@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/respondent_variant.schema.json",
+  "title": "Respondent variant",
+  "type": "object",
+  "required": ["segment_id", "variant_id", "stance"],
+  "properties": {
+    "segment_id": { "type": "string" },
+    "variant_id": { "type": "string" },
+    "stance": { "enum": ["fitting", "adjacent", "skeptical", "poor_fit"] },
+    "context_notes": { "type": "array", "items": { "type": "string" } },
+    "bias_risks": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

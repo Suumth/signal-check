@@ -1,0 +1,13 @@
+id: subscription_skeptics
+name: Subscription skeptics
+fit_type: skeptical
+context: People who resist recurring payments unless the value is frequent, concrete, and hard to replace.
+constraints:
+  - High cancellation intent.
+  - Compare against one-time purchase and free alternatives.
+current_workarounds:
+  - Manual workflows
+  - Free tiers
+  - Built-in OS features
+exclusions:
+  - Users with employer-paid budgets

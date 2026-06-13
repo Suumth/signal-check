@@ -1,0 +1,28 @@
+dimensions:
+  - id: comprehension
+    name: Comprehension
+    anchors:
+      - label: unclear
+        description: The respondent cannot explain what the product does.
+      - label: partial
+        description: The respondent understands the category but misses the workflow.
+      - label: concrete
+        description: The respondent can describe the cooking moment and expected help.
+  - id: urgency
+    name: Urgency
+    anchors:
+      - label: low
+        description: The situation is occasional or easy to ignore.
+      - label: mixed
+        description: The situation matters for some cooks or cuts.
+      - label: high
+        description: The situation creates repeated stress, mistakes, or wasted food.
+  - id: trust_friction
+    name: Trust friction
+    anchors:
+      - label: blocking
+        description: The respondent would not trust the cue during cooking.
+      - label: manageable
+        description: Trust depends on clear limits and user control.
+      - label: low
+        description: The respondent accepts cues as a helper, not an authority.

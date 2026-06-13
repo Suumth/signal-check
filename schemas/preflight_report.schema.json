@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/preflight_report.schema.json",
+  "title": "Preflight report",
+  "type": "object",
+  "required": ["summary", "keep", "change", "stop", "kill_criteria_result", "smallest_real_anchor"],
+  "properties": {
+    "summary": { "type": "string" },
+    "keep": { "type": "array", "items": { "type": "string" } },
+    "change": { "type": "array", "items": { "type": "string" } },
+    "stop": { "type": "array", "items": { "type": "string" } },
+    "kill_criteria_result": { "type": "string" },
+    "smallest_real_anchor": { "type": "string" }
+  },
+  "additionalProperties": false
+}

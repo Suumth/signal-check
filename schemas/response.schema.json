@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/response.schema.json",
+  "title": "Response",
+  "type": "object",
+  "required": ["segment_id", "stimulus_id", "free_reaction"],
+  "properties": {
+    "segment_id": { "type": "string" },
+    "stimulus_id": { "type": "string" },
+    "free_reaction": { "type": "string" },
+    "questions": { "type": "array", "items": { "type": "string" } },
+    "objections": { "type": "array", "items": { "type": "string" } },
+    "evidence_fragments": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

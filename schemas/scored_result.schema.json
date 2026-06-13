@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/scored_result.schema.json",
+  "title": "Classified result",
+  "type": "object",
+  "required": ["segment_id", "stimulus_id", "dimension_id", "anchor", "evidence", "uncertainty"],
+  "properties": {
+    "segment_id": { "type": "string" },
+    "stimulus_id": { "type": "string" },
+    "dimension_id": { "type": "string" },
+    "anchor": { "type": "string" },
+    "evidence": { "type": "string" },
+    "counter_evidence": { "type": "string" },
+    "uncertainty": { "type": "string" },
+    "reviewer_note": { "type": "string" }
+  },
+  "additionalProperties": false
+}

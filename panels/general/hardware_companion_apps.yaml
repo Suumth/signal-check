@@ -1,0 +1,13 @@
+id: hardware_companion_apps
+name: Hardware companion app users
+fit_type: adjacent
+context: People who use software because it improves or controls a physical product they already own.
+constraints:
+  - Trust depends on device reliability.
+  - Setup friction is judged harshly.
+current_workarounds:
+  - Manufacturer apps
+  - Manual controls
+  - Paper logs
+exclusions:
+  - Software-only shoppers

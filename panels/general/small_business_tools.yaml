@@ -1,0 +1,13 @@
+id: small_business_tools
+name: Small business tool evaluators
+fit_type: skeptical
+context: Owners or operators who evaluate tools through time saved, cash impact, and operational risk.
+constraints:
+  - Limited time for setup.
+  - Avoid tools that create new admin work.
+current_workarounds:
+  - Email
+  - Spreadsheets
+  - Existing accounting or scheduling tools
+exclusions:
+  - Large enterprise buyers
