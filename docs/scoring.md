@@ -14,13 +14,31 @@ Recommended dimensions:
 - switching friction
 - differentiation
 - real-world next step
+- compatibility or boundary clarity when relevant
 
 Each dimension should include:
 
 - anchor label
 - evidence excerpt or observation
-- uncertainty note
 - counter-evidence
+- uncertainty note
+- confidence note in plain language
+- negative-control relevance
 - reviewer note
 
-Avoid single-number summaries. If a summary is needed, use language such as weak, mixed, directional, or worth a real anchor. Never present a score as demand, purchase likelihood, or validation.
+Avoid single-number summaries. If a summary is needed, use language such as weak, mixed, directional, insufficient, or worth a real anchor. Never present a score as demand, purchase likelihood, representative evidence, or validation.
+
+Scoring should answer:
+
+- What did the reaction suggest?
+- What evidence supports that reading?
+- What counter-evidence weakens it?
+- What remains uncertain?
+- Did negative controls or prompt sensitivity reduce confidence?
+
+Scoring should not answer:
+
+- Will people buy?
+- How large is the market?
+- Is the idea validated?
+- What grade does the product deserve?

@@ -10,6 +10,8 @@ You may say it encourages negative controls, kill criteria, and real-world follo
 
 You may say it creates a traceable preflight record.
 
+You may say it helps plan the next real test.
+
 ## Forbidden Claims
 
 Do not claim validated purchase intent.
@@ -26,6 +28,29 @@ Do not claim launch readiness, market proof, or guaranteed willingness to pay.
 
 Do not turn generated reactions into testimonials.
 
+Do not claim 90% accuracy, predictive certainty, official backing, or a guarantee unless that evidence exists outside Signal Check.
+
 ## Why This Boundary Exists
 
 Synthetic or desk-based preflight work can reveal weak thinking, confusing language, missing segments, and obvious category problems. It cannot replace contact with real people in real contexts.
+
+## Safer Language
+
+Prefer:
+
+- directional signal
+- hypothesis
+- evidence and counter-evidence
+- uncertainty
+- real-world next step
+- Smallest Real Anchor
+
+Avoid:
+
+- validated
+- representative
+- users said
+- demand is proven
+- will buy
+- market says
+- guaranteed
