@@ -36,3 +36,7 @@ Use this after the preflight summary. The anchor must involve the world outside 
 - It does not prove representative demand.
 - It does not create testimonials.
 - It does not replace real research.
+
+## Report Link
+
+<!-- Link back to the preflight report and the exact evidence that made this anchor worth running. -->

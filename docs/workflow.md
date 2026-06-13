@@ -2,6 +2,29 @@
 
 Signal Check is used manually. There is no CLI, API, Web UI, engine, or model adapter in v0.1.
 
+## Artifact Order
+
+Use this order for a complete manual run:
+
+| Step | Input | Output |
+| --- | --- | --- |
+| Frame | `templates/product-brief.md` | `runs/<run>/product-brief.md` |
+| Plan | `templates/sampling-plan.yaml`, `panels/general/` | `runs/<run>/sampling-plan.yaml` |
+| Control | `templates/negative-controls.yaml` | `runs/<run>/negative-controls.yaml` |
+| Robustness | `templates/prompt-robustness-plan.yaml` | `runs/<run>/prompt-robustness-plan.yaml` |
+| Stimuli | brief, claim limits, example shape | `runs/<run>/stimuli.yaml` |
+| Panel | `prompts/01-generate-blind-panel.md` | respondent variants saved in the run folder |
+| Reactions | `prompts/02-elicit-neutral-reactions.md` | `runs/<run>/raw-responses.md` |
+| Classification | `prompts/03-score-against-anchors.md` | `runs/<run>/scored-results.yaml` |
+| Bias audit | `prompts/04-audit-bias.md` | `runs/<run>/bias-audit.yaml` |
+| Summary | `prompts/05-summarize-without-cherry-picking.md` | report-ready summary notes |
+| Real anchor | `prompts/06-plan-real-validation.md` | `runs/<run>/smallest-real-anchor.md` |
+| Report | `templates/preflight-report.md` | `runs/<run>/preflight-report.md` |
+
+When an output has no dedicated template, keep the prompt output in a plain Markdown or YAML file in the run folder. Use `examples/searcue/` only as a shape reference.
+
+## Sequence
+
 1. Copy `templates/product-brief.md` into a new folder under `runs/`.
 2. Fill the brief, including current alternatives, trust needs, reachability, kill criteria, and a candidate Smallest Real Anchor.
 3. Copy `templates/sampling-plan.yaml`.

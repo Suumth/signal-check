@@ -118,14 +118,14 @@ The kit may document scoring, but only as structured classification against anch
 Start here:
 
 1. Read `docs/quickstart.md`.
-2. Copy the relevant templates into `runs/<your-run-name>/`.
-3. Fill the product brief.
-4. Select segment files or draft a new segment with `templates/add-segment/`.
-5. Prepare stimuli and negative controls.
-6. Run the prompt sequence in `prompts/` manually.
-7. Save raw outputs before summaries.
-8. Complete a preflight report.
-9. Decide whether the Smallest Real Anchor is worth doing.
+2. Create `runs/<your-run-name>/`.
+3. Copy `templates/product-brief.md`, `templates/sampling-plan.yaml`, `templates/negative-controls.yaml`, `templates/prompt-robustness-plan.yaml`, `templates/preflight-report.md`, and `templates/smallest-real-anchor.md` into that folder.
+4. Fill the product brief before selecting or generating any respondent variants.
+5. Select segment files from `panels/general/` or draft a new segment with `templates/add-segment/`.
+6. Prepare `stimuli.yaml`; use `examples/searcue/stimuli.yaml` as a shape reference.
+7. Run the prompt sequence in `prompts/` manually and save raw outputs before summaries.
+8. Classify reactions against anchors, complete a bias audit, and write the preflight report.
+9. Decide whether the Smallest Real Anchor is concrete enough to run.
 
 Keep all generated or collected material in `runs/`. Keep shareable summaries in `reports/`.
 

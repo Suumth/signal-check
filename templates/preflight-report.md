@@ -8,6 +8,9 @@ Use this report to summarize a manual Product Preflight. It is not a market rese
 - Brief:
 - Selected segments:
 - Stimuli:
+- Raw responses:
+- Scored results:
+- Bias audit:
 - Negative controls:
 - Prompt robustness plan:
 - Kill criteria:
@@ -15,6 +18,10 @@ Use this report to summarize a manual Product Preflight. It is not a market rese
 ## Summary
 
 <!-- Directional interpretation only. Do not claim validation, demand, real user voices, or representative findings. -->
+
+## What This Run Can And Cannot Say
+
+<!-- State the bounded hypothesis this run supports or weakens. Also state what remains unknown. -->
 
 ## What To Keep
 
