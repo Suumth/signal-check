@@ -1,0 +1,24 @@
+run_id: "<run-id>"
+checks:
+  over_positive_reactions:
+    status: "<clear|warning|fail>"
+    evidence:
+      - "<observation>"
+  response_collapse:
+    status: "<clear|warning|fail>"
+    evidence:
+      - "<observation>"
+  weak_negative_controls:
+    status: "<clear|warning|fail>"
+    evidence:
+      - "<observation>"
+  leading_stimuli:
+    status: "<clear|warning|fail>"
+    evidence:
+      - "<observation>"
+  hidden_objections:
+    status: "<clear|warning|fail>"
+    evidence:
+      - "<observation>"
+required_action: "<continue|revise_stimuli|rerun_controls|pause|stop>"
+notes: "Bias audit checks run quality, not product quality."

@@ -90,6 +90,14 @@ Signal Check produces hypotheses, warnings, and next-test recommendations, not c
 Do not treat the output as validation.
 Use it to decide what to test next.
 
+## Optional companion agent
+
+Signal Check works as a file-based method kit without any assistant. An optional Custom GPT companion can help facilitate runs, ask step-by-step questions, and generate run-pack files.
+
+The companion does not change the method boundaries. It must not be treated as validation, representative research, proof of demand, or a replacement for real users.
+
+See `docs/companion-agent.md` for setup guidance.
+
 ## Decision outcomes
 
 Every Signal Check run should end with one of five decisions:
@@ -109,6 +117,7 @@ Every Signal Check run should end with one of five decisions:
 - `docs/scoring.md` explains qualitative scoring.
 - `docs/quality-gates.md` lists checks before trusting a run.
 - `docs/using-with-coding-agents.md` explains how to use Signal Check before coding-agent implementation.
+- `docs/companion-agent.md` explains the optional Custom GPT companion.
 - `docs/workflow.md` explains the manual artifact order.
 - `docs/method-boundaries.md` states what Signal Check can and cannot establish.
 - `docs/manual-run-protocol.md` describes a complete manual run.

@@ -4,6 +4,8 @@ Signal Check is run by copying files, filling them in, and using the prompts man
 
 Start with `templates/run-pack/` for a complete manual run skeleton. Copy it into `runs/<run-id>/` and fill the files in numeric order. Use individual templates only when extending or repairing a run.
 
+Optional: use `docs/companion-agent.md` if you want to configure a Custom GPT companion for guided runs. The manual file-based workflow remains the source of truth.
+
 Use `examples/v1-release-candidate/` for small, public-safe teaching examples. Do not treat examples as product evidence.
 
 ## 1. Create A Run Folder

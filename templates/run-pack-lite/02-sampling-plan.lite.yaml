@@ -1,0 +1,49 @@
+run_id: "<run-id>"
+primary_assumption: "<assumption being examined>"
+perspectives:
+  - id: "fit-1"
+    type: "fitting"
+    segment: "<segment name>"
+    problem_or_job: "<problem/job>"
+    likely_objections:
+      - "<objection>"
+    trust_needs:
+      - "<trust need>"
+    reachability: "<how this segment could be reached for a real test>"
+  - id: "adjacent-1"
+    type: "adjacent"
+    segment: "<segment name>"
+    problem_or_job: "<problem/job>"
+    likely_objections:
+      - "<objection>"
+    trust_needs:
+      - "<trust need>"
+    reachability: "<reachability>"
+  - id: "skeptical-1"
+    type: "skeptical"
+    segment: "<segment name>"
+    problem_or_job: "<problem/job>"
+    likely_objections:
+      - "<objection>"
+    trust_needs:
+      - "<trust need>"
+    reachability: "<reachability>"
+  - id: "poor-fit-1"
+    type: "poor_fit"
+    segment: "<segment name>"
+    problem_or_job: "<why poor fit matters>"
+    likely_objections:
+      - "<objection>"
+    trust_needs:
+      - "<trust need>"
+    reachability: "<reachability>"
+  - id: "control-1"
+    type: "non_market_control"
+    segment: "<non-market or irrelevant perspective>"
+    problem_or_job: "<why this should not react positively>"
+    likely_objections:
+      - "<expected rejection>"
+    trust_needs:
+      - "not applicable"
+    reachability: "not a target segment"
+notes: "Synthetic perspectives are directional only and do not represent real users."

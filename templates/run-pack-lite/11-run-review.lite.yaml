@@ -1,0 +1,17 @@
+run_id: "<run-id>"
+review_status: "<ready|revise|block>"
+checks:
+  brief_specific_enough: "<yes|no|partial>"
+  segment_first: "<yes|no|partial>"
+  skeptical_perspectives_included: "<yes|no|partial>"
+  poor_fit_included: "<yes|no|partial>"
+  non_market_control_included: "<yes|no|partial>"
+  negative_controls_reviewed: "<yes|no|partial>"
+  kill_criteria_defined: "<yes|no|partial>"
+  objections_preserved: "<yes|no|partial>"
+  claim_safe: "<yes|no|partial>"
+  smallest_real_anchor_defined: "<yes|no|partial>"
+blockers:
+  - "<blocker or none>"
+recommended_next_action: "<continue|revise|pause|stop>"
+notes: "The review assesses run quality, not product quality."
