@@ -1,0 +1,18 @@
+assistant_version: ""
+signal_check_version: ""
+status: "draft"
+instructions_source: "docs/custom-gpt-instructions.md"
+knowledge_files:
+  - "knowledge/signal-check-run-assistant/rules.md"
+  - "knowledge/signal-check-run-assistant/phase-map.md"
+  - "knowledge/signal-check-run-assistant/run-pack-templates-lite.md"
+  - "knowledge/signal-check-run-assistant/methodology-prompts.md"
+  - "knowledge/signal-check-run-assistant/segments-panel-general.md"
+  - "knowledge/signal-check-run-assistant/example-quiet-invoice.md"
+capabilities:
+  data_analysis: true
+  web_browsing: false
+  image_generation: false
+last_smoke_test:
+  date: ""
+  result: ""

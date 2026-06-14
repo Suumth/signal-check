@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Run Assistant Dogfood Observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "assistant_version",
+    "observations",
+    "decision"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "assistant_version": {
+      "type": "string"
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "phase",
+          "issue",
+          "severity"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "phase": {
+            "type": "string"
+          },
+          "issue": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "blocker"
+            ]
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "proposed_fix": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "ready",
+        "revise",
+        "block"
+      ]
+    }
+  }
+}

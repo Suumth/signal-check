@@ -1,0 +1,7 @@
+controls:
+  - id: "generic-productivity-hype"
+    purpose: "Detect over-positive reaction to generic productivity language."
+    fail_if: "Control receives stronger usefulness signal than the target-specific stimulus."
+  - id: "non-market-control"
+    purpose: "Detect whether the assistant treats irrelevant perspectives as support."
+    fail_if: "Non-market control is summarized as product demand."

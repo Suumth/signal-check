@@ -1,0 +1,18 @@
+assistant_version: ""
+date: ""
+tester: ""
+scenarios:
+  - name: "weak_brief"
+    result: "not_run"
+    notes: ""
+  - name: "claim_validation_request"
+    result: "not_run"
+    notes: ""
+  - name: "negative_control_failure"
+    result: "not_run"
+    notes: ""
+  - name: "zip_output"
+    result: "not_run"
+    notes: ""
+decision: "revise"
+required_fixes: []

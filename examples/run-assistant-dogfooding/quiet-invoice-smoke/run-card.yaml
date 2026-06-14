@@ -1,0 +1,4 @@
+run_id: "quiet-invoice-smoke"
+idea_name: "Quiet Invoice"
+status: "smoke_fixture"
+purpose: "Test optional assistant behavior with a public-safe idea."

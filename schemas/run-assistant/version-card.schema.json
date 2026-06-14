@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Run Assistant Version Card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "assistant_version",
+    "signal_check_version",
+    "status",
+    "knowledge_files"
+  ],
+  "properties": {
+    "assistant_version": {
+      "type": "string"
+    },
+    "signal_check_version": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "rc",
+        "stable",
+        "deprecated"
+      ]
+    },
+    "instructions_source": {
+      "type": "string"
+    },
+    "knowledge_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "capabilities": {
+      "type": "object"
+    },
+    "last_smoke_test": {
+      "type": "object"
+    }
+  }
+}

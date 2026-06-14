@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Run Assistant Regression Result",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "assistant_version",
+    "date",
+    "scenarios",
+    "decision"
+  ],
+  "properties": {
+    "assistant_version": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "tester": {
+      "type": "string"
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "result"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail",
+              "not_run"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "decision": {
+      "type": "string",
+      "enum": [
+        "ready",
+        "revise",
+        "block"
+      ]
+    },
+    "required_fixes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

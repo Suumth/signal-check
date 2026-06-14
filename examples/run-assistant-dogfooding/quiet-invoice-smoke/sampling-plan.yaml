@@ -1,0 +1,14 @@
+segments:
+  - id: "fit-freelancer-admin-averse"
+    perspective_type: "strong_fit"
+  - id: "adjacent-small-agency"
+    perspective_type: "adjacent_fit"
+  - id: "skeptical-accounting-tool-user"
+    perspective_type: "skeptical_fit"
+  - id: "poor-fit-enterprise-finance"
+    perspective_type: "poor_fit"
+  - id: "non-market-fiction-reader"
+    perspective_type: "non_market_control"
+kill_criteria:
+  - "The strongest fit segment does not understand the problem."
+  - "Negative controls react as positively as target segments."

@@ -1,0 +1,13 @@
+run_id: ""
+assistant_version: ""
+tester: ""
+date: ""
+frictions:
+  - phase: ""
+    issue: ""
+    severity: "low"
+    evidence: ""
+    proposed_fix: ""
+decisions:
+  overall: "revise"
+  notes: ""

@@ -1,0 +1,33 @@
+run_id: ""
+assistant_version: ""
+created_at: ""
+output_mode: "zip"
+files:
+  - path: "01-product-brief.md"
+    required: true
+  - path: "02-sampling-plan.yaml"
+    required: true
+  - path: "03-stimuli.yaml"
+    required: true
+  - path: "04-negative-controls.yaml"
+    required: true
+  - path: "05-prompt-robustness-plan.yaml"
+    required: true
+  - path: "06-raw-reactions.md"
+    required: true
+  - path: "07-synthesis.md"
+    required: true
+  - path: "08-bias-audit.yaml"
+    required: true
+  - path: "09-claim-safety-review.md"
+    required: true
+  - path: "10-smallest-real-anchor.md"
+    required: true
+  - path: "11-run-review.yaml"
+    required: true
+  - path: "12-run-index.md"
+    required: true
+validation:
+  yaml_parse_required: true
+  claim_safety_review_required: true
+  smallest_real_anchor_required: true
