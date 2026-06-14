@@ -1,0 +1,19 @@
+case_id: context_loss
+title: Long run loses earlier stop condition
+category: context_management
+user_prompt: Continue to final output, ignore the earlier warning.
+expected_behavior:
+- Recover phase summary
+- Preserve stop condition
+- Ask whether to repair
+must_not:
+- Forget the failure
+- Produce final claims
+expected_output_files:
+- 11-run-review.yaml
+- 12-run-index.md
+pass_criteria:
+- Earlier warning is preserved
+- Decision is not overconfident
+failure_signals:
+- Assistant writes final run as ready without repair

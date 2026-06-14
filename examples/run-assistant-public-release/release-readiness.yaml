@@ -1,0 +1,13 @@
+status: draft
+checks:
+  instructions_reviewed: true
+  knowledge_bundle_reviewed: true
+  smoke_test_passed: false
+  regression_reviewed: false
+  known_limitations_published: true
+  data_minimization_visible: true
+  no_private_data: true
+  no_validation_claims: true
+decision: polish_recommended
+blockers: []
+notes: Run a smoke test and regression review before public release.

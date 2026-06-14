@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Run Assistant Transcript Review",
+  "type": "object",
+  "required": [
+    "transcript_id",
+    "scenario",
+    "decision",
+    "evidence",
+    "claim_safety_notes"
+  ],
+  "properties": {
+    "transcript_id": {
+      "type": "string"
+    },
+    "scenario": {
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "pass",
+        "revise",
+        "block"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "boundary_behavior": {
+      "type": "string"
+    },
+    "stop_condition_behavior": {
+      "type": "string"
+    },
+    "file_output_behavior": {
+      "type": "string"
+    },
+    "claim_safety_notes": {
+      "type": "string"
+    },
+    "required_repairs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Run Assistant Public Release Readiness",
+  "type": "object",
+  "required": [
+    "status",
+    "checks",
+    "decision",
+    "blockers"
+  ],
+  "properties": {
+    "status": {
+      "enum": [
+        "draft",
+        "ready",
+        "blocked"
+      ]
+    },
+    "checks": {
+      "type": "object",
+      "properties": {
+        "instructions_reviewed": {
+          "type": "boolean"
+        },
+        "knowledge_bundle_reviewed": {
+          "type": "boolean"
+        },
+        "smoke_test_passed": {
+          "type": "boolean"
+        },
+        "regression_reviewed": {
+          "type": "boolean"
+        },
+        "known_limitations_published": {
+          "type": "boolean"
+        },
+        "data_minimization_visible": {
+          "type": "boolean"
+        },
+        "no_private_data": {
+          "type": "boolean"
+        },
+        "no_validation_claims": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "decision": {
+      "enum": [
+        "ready",
+        "polish_recommended",
+        "blocked"
+      ]
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

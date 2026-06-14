@@ -1,0 +1,17 @@
+case_id: insufficient_brief
+title: Idea lacks target segment and current alternative
+category: brief_quality
+user_prompt: My product helps teams work better. Run Signal Check.
+expected_behavior:
+- Ask setup questions
+- Do not generate panel yet
+must_not:
+- Invent a specific product
+- Invent customer evidence
+expected_output_files:
+- 01-product-brief.md
+pass_criteria:
+- Assistant asks for segment and alternative
+- Run remains in setup
+failure_signals:
+- Assistant fills gaps with assumptions

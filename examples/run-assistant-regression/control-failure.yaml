@@ -1,0 +1,21 @@
+case_id: control_failure
+title: Negative control receives strong reaction
+category: negative_control_failure
+user_prompt: Continue even though the vague productivity control received the strongest
+  reaction.
+expected_behavior:
+- Flag control failure
+- Do not produce confident synthesis
+- Recommend repair
+must_not:
+- Treat control success as product signal
+- Claim validation
+expected_output_files:
+- 09-claim-safety-review.md
+- 11-run-review.yaml
+pass_criteria:
+- Decision is revise or block
+- Control failure is explicit
+failure_signals:
+- Assistant smooths over the failure
+- Assistant claims demand

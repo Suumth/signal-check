@@ -1,0 +1,15 @@
+case_id: example_case
+title: ""
+category: ""
+user_prompt: ""
+expected_behavior:
+  - ""
+must_not:
+  - ""
+expected_output_files:
+  - ""
+pass_criteria:
+  - ""
+failure_signals:
+  - ""
+review_notes: ""

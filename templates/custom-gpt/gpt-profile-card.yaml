@@ -1,0 +1,21 @@
+name: Signal Check Run Assistant
+description: Facilitates file-based Signal Check product preflight runs without claiming validation.
+status: optional_companion
+capabilities:
+  data_analysis: recommended_on
+  web_browsing: off_by_default
+  image_generation: off
+  canvas: optional
+boundaries:
+  - no_validated_demand
+  - no_representative_findings
+  - no_purchase_intent_proof
+  - no_synthetic_testimonials
+  - no_real_user_simulation
+knowledge_files:
+  - knowledge/signal-check-run-assistant/upload-ready/01-rules.md
+  - knowledge/signal-check-run-assistant/upload-ready/02-methodology-prompts.md
+  - knowledge/signal-check-run-assistant/upload-ready/03-run-pack-templates-lite.md
+  - knowledge/signal-check-run-assistant/upload-ready/04-segments-panel-general.md
+  - knowledge/signal-check-run-assistant/upload-ready/05-phase-map.md
+  - knowledge/signal-check-run-assistant/upload-ready/06-example-quiet-invoice.md

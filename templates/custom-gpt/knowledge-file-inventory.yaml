@@ -1,0 +1,21 @@
+bundle_name: signal-check-run-assistant-upload-ready
+version_status: optional_companion
+files:
+  - file: 01-rules.md
+    purpose: method boundaries and safety rules
+  - file: 02-methodology-prompts.md
+    purpose: run and review prompt guidance
+  - file: 03-run-pack-templates-lite.md
+    purpose: compact output file structures
+  - file: 04-segments-panel-general.md
+    purpose: generic segment and perspective guidance
+  - file: 05-phase-map.md
+    purpose: four-phase run flow
+  - file: 06-example-quiet-invoice.md
+    purpose: public-safe example reference
+not_allowed:
+  - private_project_data
+  - personal_raw_data
+  - app_source_code
+  - website_source_code
+  - large_unreviewed_raw_outputs
