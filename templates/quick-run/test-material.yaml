@@ -1,0 +1,44 @@
+run_id: ""
+purpose: "Quick Run test material. This combines segments, stimuli, controls, and robustness notes."
+segments:
+  fitting:
+    - id: ""
+      context: ""
+      likely_need: ""
+      likely_objection: ""
+  skeptical_or_poor_fit:
+    - id: ""
+      context: ""
+      reason_to_reject: ""
+      likely_objection: ""
+  non_market_control:
+    - id: ""
+      context: ""
+      why_irrelevant: ""
+stimuli:
+  - id: "A"
+    label: ""
+    text: ""
+    hypothesis: ""
+  - id: "B"
+    label: ""
+    text: ""
+    hypothesis: ""
+negative_controls:
+  - id: "NC1"
+    label: ""
+    text: ""
+    should_expose: ""
+prompt_robustness_notes:
+  neutral_rewording_to_try:
+    - ""
+  founder_friendly_language_to_avoid:
+    - ""
+  signs_the_result_is_unstable:
+    - ""
+claim_limits:
+  no_validation_claim: true
+  no_representative_claim: true
+  no_real_user_voice_claim: true
+  no_purchase_intent_claim: true
+  no_market_proof_claim: true

@@ -20,6 +20,10 @@ The assistant helps users:
 
 The assistant must not be treated as a validation engine. It does not validate demand, prove purchase intent, produce representative findings, simulate real users, or replace real user research.
 
+The companion may facilitate either a Quick Run or a Full Run.
+A Quick Run should still preserve claim boundaries, at least one negative control, counter-evidence, uncertainty, and a Smallest Real Anchor.
+The companion must not shorten a run by removing the method boundary.
+
 ## Recommended Knowledge files
 
 Upload these files to the Custom GPT Knowledge section:
