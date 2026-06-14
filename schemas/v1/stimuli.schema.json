@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/v1/stimuli.schema.json",
+  "title": "Stimuli",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "stimuli"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "v1"
+    },
+    "stimuli": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "stimulus_id",
+          "message",
+          "format",
+          "intended_learning"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "stimulus_id": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "format": {
+            "enum": [
+              "headline",
+              "paragraph",
+              "landing_page_section",
+              "outreach_note",
+              "concept_note"
+            ]
+          },
+          "intended_learning": {
+            "type": "string"
+          },
+          "claim_risk_notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "comparison_set": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

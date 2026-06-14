@@ -1,0 +1,9 @@
+schema_version: v1
+segment_id: ''
+perspective_type: strong_fit | adjacent_fit | skeptical_fit | poor_fit | non_market_control
+situation: ''
+job_or_pressure: ''
+current_alternative: ''
+likely_objections: []
+evidence_needed: []
+poor_fit_reason: ''

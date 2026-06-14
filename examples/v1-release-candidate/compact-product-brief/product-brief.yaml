@@ -1,0 +1,22 @@
+schema_version: v1
+idea_name: Receipt Note Cleaner
+problem_context: Freelancers often paste messy receipt notes into accounting tools
+  and later struggle to understand them.
+target_user_or_segment: Solo freelancers who already track expenses manually.
+current_alternative: Manual cleanup in notes, spreadsheets, or accounting memo fields.
+proposed_change: A tiny local utility that rewrites messy receipt notes into clearer,
+  structured memo text.
+main_assumptions:
+- Messy memo text causes enough friction to justify a small tool.
+- Users prefer local cleanup over sending data to a service.
+known_constraints:
+- Must not imply tax advice.
+- Must not store sensitive receipt data in examples.
+out_of_scope:
+- Filing taxes
+- Accounting classification
+- Receipt OCR
+unsafe_claims_to_avoid:
+- saves money on taxes
+- accountant-approved
+- validated demand

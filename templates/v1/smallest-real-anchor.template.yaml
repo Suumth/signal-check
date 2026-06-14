@@ -1,0 +1,11 @@
+schema_version: v1
+anchor_id: ''
+real_audience: ''
+real_action: ''
+artifact_to_send_or_show: ''
+time_window: ''
+observable_signal: ''
+stop_evidence: ''
+claim_boundary: This anchor can create real-world learning, but does not by itself
+  establish market demand.
+next_decision: ''

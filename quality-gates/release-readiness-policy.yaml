@@ -1,0 +1,20 @@
+version: "1.0-rc.1"
+purpose: "Define the minimum release-readiness record for Signal Check releases."
+required_sections:
+  - "scope"
+  - "changed_files"
+  - "commands_run"
+  - "syntax_validation"
+  - "file_scope_validation"
+  - "claim_risk_review"
+  - "run_structure_review"
+  - "known_limits"
+  - "release_decision"
+allowed_decisions:
+  - "ready"
+  - "ready_with_notes"
+  - "revise_before_release"
+  - "pause"
+  - "do_not_release"
+notes:
+  - "A release decision describes repository readiness, not product-market validity."

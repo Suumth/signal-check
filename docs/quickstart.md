@@ -1,8 +1,10 @@
 # Quickstart
 
-Signal Check v0.1 is run by copying files, filling them in, and using the prompts manually. There is no CLI, API, Web UI, engine, or model integration.
+Signal Check is run by copying files, filling them in, and using the prompts manually. There is no CLI, API, Web UI, engine, or model integration.
 
-Use `examples/searcue/` as a completed shape reference. Do not treat it as evidence for SearCue or as a required product category.
+For a complete ordered folder, copy `templates/run-pack/` into `runs/<run-id>/` and fill the files in numeric order. The individual templates remain available when you want to assemble a smaller custom run.
+
+Use `examples/v1-release-candidate/` for small, public-safe teaching examples. Do not treat examples as product evidence.
 
 ## 1. Create A Run Folder
 
@@ -12,7 +14,9 @@ Create a local folder under `runs/`:
 runs/my-idea/
 ```
 
-Copy these files into it:
+Fast path: copy `templates/run-pack/` into `runs/my-idea/`.
+
+Custom path: copy these individual files into it:
 
 - `templates/product-brief.md`
 - `templates/sampling-plan.yaml`
@@ -25,7 +29,7 @@ Copy these files into it:
 - `templates/preflight-report.md`
 - `templates/smallest-real-anchor.md`
 
-Use `examples/searcue/stimuli.yaml`, `examples/searcue/example-raw-responses.md`, `examples/searcue/example-scored-results.yaml`, and `examples/searcue/preflight-report.md` as shape references when needed.
+Use `examples/v1-release-candidate/` as a shape reference when needed.
 
 ## 2. Run The Preflight
 

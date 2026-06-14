@@ -1,133 +1,106 @@
 # Signal Check
 
-Signal Check is a file-based open-source method kit for running a Product Preflight on product ideas before building them.
+Signal Check is a file-based open-source method kit for checking product ideas before building them.
 
-It helps a founder, maker, product lead, or researcher test the shape of an idea against carefully chosen audience segments, neutral prompts, negative controls, and explicit kill criteria. The output is not a verdict. It is a structured way to notice weak signal, strong caveats, and the smallest real-world action worth taking next.
+It helps teams, indie founders, solo builders, product leads, and AI-assisted builders run a careful Product Preflight: frame an idea, choose segment-first perspectives, test messages, surface objections, audit bias, and end with the smallest real-world test worth doing next.
 
-v0.1 is intentionally not software that runs. It is a Synthetic Panel Kit made from Markdown, YAML, JSON Schemas, prompts, templates, panels, and example artifacts.
+Signal Check is not an app, CLI, API, web app, model integration, or automated research system. It is a set of Markdown, YAML, JSON Schema, prompt, checklist, and contract files designed for manual use.
 
-## What It Is
+## What It Helps With
 
-Signal Check is a thinking tool for early product ideas. It supports a manual workflow:
+- Clarify who an idea might be for.
+- Separate segments from invented personas.
+- Compare messages without treating reactions as proof.
+- Include fitting, adjacent, skeptical, poor-fit, and non-market-control perspectives.
+- Use negative controls to catch false support.
+- Check prompt robustness before trusting a pattern.
+- Preserve evidence, counter-evidence, uncertainty, and confidence notes.
+- Run a bias audit before summarizing.
+- Apply kill criteria.
+- Translate the run into a Smallest Real Anchor.
 
-1. Write a compact product brief.
-2. Select segment-first panels: fitting, adjacent, skeptical, and poor-fit perspectives.
-3. Prepare neutral stimuli and negative controls.
-4. Elicit free reactions before any structured scoring.
-5. Check prompt robustness before trusting a pattern.
-6. Classify reactions against explicit anchors with evidence and uncertainty.
-7. Apply kill criteria.
-8. End the Product Preflight with a Smallest Real Anchor.
+## What It Cannot Do
 
-## What v0.1 Contains
+Signal Check does not:
 
-Signal Check v0.1 is a file kit:
+- Do not use it to validate purchase intent.
+- Do not use it to produce representative findings.
+- Do not use it to create real user voices.
+- Do not use it to predict demand.
+- Do not use it to generate synthetic testimonials.
+- Do not use it to replace user research.
+- Do not use it to prove product-market fit.
+- Do not use it to decide that you should build.
 
-- `docs/` explains the method, claims, workflow, bias controls, scoring limits, and glossary.
-- `schemas/` defines artifact shapes for briefs, segments, stimuli, responses, classified results, audits, and reports.
-- `panels/` contains reusable segment files.
-- `templates/` contains copyable run materials.
-- `prompts/` contains the manual prompt sequence.
-- `examples/searcue/` shows a complete example Product Preflight.
-- `runs/` is where you can keep local run artifacts.
-- `reports/` is where shareable summaries can go.
+Its output is directional preflight material. It can make the next real test clearer; it cannot make an idea true.
 
-Signal Check v0.1 does not contain:
+## How A Manual Run Works
 
-- CLI
-- API
-- Web UI
-- model integration
-- automatic analysis engine
-- automated scoring or grading engine
+The fastest path is to copy the ordered run pack:
 
-## What It Is Not
+```text
+cp -R templates/run-pack runs/my-run
+```
 
-Signal Check is not a market research replacement, not an AI oracle, not a fake-persona generator, and not a system for proving demand. It does not claim validated purchase intent, representative findings, real user voices, demand prediction, or that AI replaces user research.
+Then fill the files in numeric order:
 
-It is deliberately narrow: it helps you think better before you spend real build time.
+1. Set the run context.
+2. Write the product brief.
+3. Plan segment-first coverage.
+4. Select fitting, adjacent, skeptical, poor-fit, and non-market-control perspectives.
+5. Prepare stimuli and negative controls.
+6. Plan prompt-robustness variants.
+7. Save short raw reactions before interpreting.
+8. Classify reactions with evidence, counter-evidence, uncertainty, and confidence notes.
+9. Complete a bias audit.
+10. Write a claim-safe preflight report.
+11. Define the Smallest Real Anchor.
 
-## Who It Is For
+There is no scoring engine. Use classifications as organizing lenses, not grades.
 
-Use Signal Check when you have an early product, feature, app, utility, or service idea and need a disciplined preflight before committing to design, code, or marketing.
+## Important Files
 
-It is best for:
+- `docs/quickstart.md` gets you through a first run.
+- `docs/workflow.md` explains the manual artifact order.
+- `docs/method-boundaries.md` states what Signal Check can and cannot establish.
+- `docs/manual-run-protocol.md` describes a complete manual run.
+- `docs/claim-guardrails.md` lists allowed and forbidden claims.
+- `docs/public-trust-statement.md` gives public wording boundaries.
+- `contracts/v1/` defines stable v1 artifact contracts.
+- `templates/run-pack/` is the copyable full run folder.
+- `templates/v1/` contains compact v1 artifact templates.
+- `schemas/v1/` contains v1 JSON Schemas.
+- `prompts/v1/` contains release-candidate review prompts.
+- `checklists/` contains operator, claim-safety, method-contract, and release-readiness checks.
+- `quality-gates/` and `tools/quality/` contain optional maintainer validation checks.
 
-- solo builders and small teams
-- product managers shaping an early concept
-- researchers preparing a real study
-- open-source maintainers testing positioning
-- AI-assisted builders who need stronger decision hygiene
+## Examples
 
-It is not enough when you need pricing validation, statistically defensible research, usability evidence, legal review, safety review, or launch confidence.
+Use `examples/v1-release-candidate/` for small, public-safe teaching examples:
 
-## How A Manual Product Preflight Works
+- `compact-product-brief/` shows a narrow, claim-safe product brief.
+- `blocked-synthesis-claim-risk/` shows a synthesis that must be blocked and repaired.
+- `real-anchor-ready/` shows a Smallest Real Anchor that moves outside the prompt environment.
 
-Start with `templates/product-brief.md`. Keep the brief short and concrete. Then choose panels from `panels/general/` and copy `templates/sampling-plan.yaml`.
+Examples are teaching artifacts. They are not proof that any product should be built.
 
-For each run:
+## Contributing
 
-- include at least one fitting segment
-- include at least one adjacent segment
-- include at least one skeptical segment
-- include at least one poor-fit segment
-- include negative controls
-- record free reactions before structured classification
-- compare prompt variants when wording may be steering the reaction
-- document uncertainty instead of smoothing it away
-- write kill criteria before interpreting results
-- finish with `templates/smallest-real-anchor.md`
+Contributions are welcome when they strengthen the method and preserve its boundaries.
 
-## Why v0.1 Is File-Based
+Good contributions include clearer docs, stronger prompt guardrails, better segment definitions, safer templates, useful schemas, small public examples, and quality gates that catch risky claims.
 
-The first version is file-based because the method matters more than automation. Files make assumptions reviewable. They keep the workflow portable, auditable, forkable, and easy to adapt without hiding judgment inside a product interface or scoring engine.
+Contributions will be blocked if they add fake validation language, synthetic testimonials, representative-claim framing, large raw-response dumps, proprietary product detail, or tooling that repositions Signal Check as automated market research.
 
-There is no CLI, API, browser app, model integration, or automated analysis in v0.1.
+Read:
 
-## SearCue Example
+- `CONTRIBUTING.md`
+- `SECURITY.md`
+- `MAINTAINERS.md`
 
-`examples/searcue/` contains a complete example Product Preflight for a fictional app idea. SearCue is a sample case and method stress test. It is not the Signal Check project itself. Use it as a reference for artifact shape, not as proof that the idea is good.
+## Repository Boundary
 
-Read it in this order:
-
-1. `examples/searcue/brief.md`
-2. `examples/searcue/sampling-plan.yaml`
-3. `examples/searcue/stimuli.yaml`
-4. `examples/searcue/example-raw-responses.md`
-5. `examples/searcue/example-scored-results.yaml`
-6. `examples/searcue/preflight-report.md`
-
-## Forbidden Claims
-
-Do not use Signal Check outputs to claim:
-
-- validated purchase intent
-- representative evidence
-- real user voices
-- predict demand
-- AI replaces user research
-- market validation
-- guaranteed willingness to pay
-- launch readiness
-- synthetic testimonials
-
-The kit may document scoring, but only as structured classification against anchors with evidence and uncertainty. Treat scoring as an organizing lens, not a product promise.
-
-## Manual Use
-
-Start here:
-
-1. Read `docs/quickstart.md`.
-2. Create `runs/<your-run-name>/`.
-3. Copy the needed files from `templates/`, including `product-brief.md`, `sampling-plan.yaml`, `stimuli.yaml`, `negative-controls.yaml`, `prompt-robustness-plan.yaml`, `raw-responses.md`, `scored-results.yaml`, `bias-audit.yaml`, `preflight-report.md`, and `smallest-real-anchor.md`.
-4. Fill the product brief before selecting or generating any respondent variants.
-5. Select segment files from `panels/general/` or draft a new segment with `templates/add-segment/`.
-6. Fill `stimuli.yaml`; use `examples/searcue/stimuli.yaml` as a completed shape reference.
-7. Run the prompt sequence in `prompts/` manually and save raw outputs before summaries.
-8. Classify reactions against anchors, complete a bias audit, and write the preflight report.
-9. Decide whether the Smallest Real Anchor is concrete enough to run.
-
-Keep all generated or collected material in `runs/`. Keep shareable summaries in `reports/`.
+Signal Check should stay public, small, and method-focused. Do not add private runs, customer data, large raw responses, media assets, website code, app code, package-manager setup, or runtime implementation unless a future version explicitly changes scope.
 
 ## License
 

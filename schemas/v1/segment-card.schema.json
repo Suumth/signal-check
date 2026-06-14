@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/v1/segment-card.schema.json",
+  "title": "Segment Card",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "segment_id",
+    "perspective_type",
+    "situation"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "v1"
+    },
+    "segment_id": {
+      "type": "string"
+    },
+    "perspective_type": {
+      "enum": [
+        "strong_fit",
+        "adjacent_fit",
+        "skeptical_fit",
+        "poor_fit",
+        "non_market_control"
+      ]
+    },
+    "situation": {
+      "type": "string"
+    },
+    "job_or_pressure": {
+      "type": "string"
+    },
+    "current_alternative": {
+      "type": "string"
+    },
+    "likely_objections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "evidence_needed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "poor_fit_reason": {
+      "type": "string"
+    }
+  }
+}

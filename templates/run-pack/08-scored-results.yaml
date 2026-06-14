@@ -1,0 +1,45 @@
+# Purpose: Classify raw reactions against anchors without treating scores as proof.
+# When to fill: After 07-raw-responses.md and before the bias audit.
+# Previous file needed: 07-raw-responses.md.
+# Next file: 09-bias-audit.yaml.
+# Claim boundary: This is structured interpretation, not validation, grading, or prediction.
+# Data minimization: Quote only the minimum evidence needed to support the classification.
+run_id: ""
+purpose: "Classify raw reactions against anchors. This is structured interpretation, not validation."
+scoring_note: "Use dimensions as organizing lenses. Do not calculate a total product score."
+dimensions:
+  - id: "problem_recognition"
+    anchor: "Does the segment recognize the situation or workaround?"
+  - id: "specificity"
+    anchor: "Does the reaction name concrete context rather than generic approval?"
+  - id: "objection_quality"
+    anchor: "Do objections reveal useful constraints, trust needs, or alternatives?"
+  - id: "control_integrity"
+    anchor: "Did negative controls and non-market controls prevent false support?"
+results:
+  - segment_id: ""
+    fit_type: ""
+    prompt_variant_id: ""
+    stimulus_id: ""
+    dimension_id: ""
+    classification: "strong | mixed | weak | unclear | control_failure"
+    evidence:
+      - ""
+    counter_evidence:
+      - ""
+    uncertainty:
+      - ""
+    confidence_note: ""
+    negative_control_relevance: ""
+    non_market_control_relevance: ""
+    reviewer_note: ""
+claim_limits:
+  no_absolute_validation: true
+  no_purchase_probability_claim: true
+  no_representative_claim: true
+  no_real_user_voice_claim: true
+  no_total_product_score: true
+review_notes:
+  - "Keep evidence, counter-evidence, uncertainty, and confidence notes separate."
+  - "If evidence is thin or contradictory, mark the classification as unclear or low confidence."
+  - "A high-looking classification is not a market claim."

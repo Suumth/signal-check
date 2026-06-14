@@ -1,0 +1,34 @@
+# Purpose: Prepare neutral test material with explicit claim limits.
+# When to fill: After 03-selected-segments.yaml and before negative-control review.
+# Previous file needed: 03-selected-segments.yaml.
+# Next file: 05-negative-controls.yaml.
+# Claim boundary: Stimuli are test material, not proven positioning or validated messages.
+# Data minimization: Do not include unreleased private features, private customer examples, or confidential claims in public repo stimuli.
+run_id: ""
+purpose: "Prepare manual Product Preflight test materials."
+stimuli:
+  - id: ""
+    type: "category | problem | action | comparison | pricing | onboarding"
+    title: ""
+    content: ""
+    intended_use: ""
+    target_segment_assumption: ""
+    evidence_needed_before_use:
+      - ""
+    claim_limits:
+      no_validated_purchase_intent: true
+      no_representative_claims: true
+      no_real_user_voices: true
+      no_demand_prediction: true
+      no_synthetic_testimonials: true
+      no_guarantees_without_external_evidence: true
+      no_partnership_or_official_support_without_external_evidence: true
+      notes:
+        - ""
+    known_risks:
+      - ""
+review_notes:
+  - "Use plain wording so reactions target the idea, not polish."
+  - "Include weaker or bounded variants when wording might steer reactions."
+  - "Do not present a stimulus as proven, official, representative, or validated unless evidence exists outside Signal Check."
+  - "Separate evidence, counter-evidence, uncertainty, and confidence notes in later files."

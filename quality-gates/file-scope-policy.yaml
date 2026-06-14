@@ -1,0 +1,36 @@
+version: "1.0-rc.1"
+purpose: "Keep the public Signal Check repository small, method-focused, and free of private product material."
+max_file_size_kb: 200
+blocked_extensions:
+  - ".mov"
+  - ".mp4"
+  - ".webm"
+  - ".png"
+  - ".jpg"
+  - ".jpeg"
+  - ".heic"
+  - ".gif"
+blocked_path_fragments:
+  - "AI Projekte Vault"
+  - "docs/obsidian"
+  - "Exports/"
+  - "runs/searcue-beta"
+  - "searcue-beta-recruiting"
+  - "large-raw-responses"
+  - "raw_response_dump"
+  - "private/"
+  - "internal/"
+  - "node_modules/"
+  - ".DS_Store"
+blocked_top_level_paths:
+  - "src"
+  - "bin"
+  - "test"
+blocked_filenames:
+  - "package.json"
+  - "index.html"
+allowed_exceptions:
+  - "README.md"
+  - "LICENSE"
+notes:
+  - "This policy is conservative by design. It can be adjusted by maintainers, but every exception should be documented in a validation report."

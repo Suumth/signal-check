@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/v1/release-candidate-review.schema.json",
+  "title": "Release Candidate Review",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "version",
+    "reviewer",
+    "final_decision"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "v1"
+    },
+    "version": {
+      "type": "string"
+    },
+    "reviewer": {
+      "type": "string"
+    },
+    "final_decision": {
+      "enum": [
+        "ready_for_v1",
+        "revise_before_v1",
+        "block_v1"
+      ]
+    },
+    "date": {
+      "type": "string"
+    },
+    "repository_commit": {
+      "type": "string"
+    },
+    "review_areas": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "blocking_issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_revisions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/v1/smallest-real-anchor.schema.json",
+  "title": "Smallest Real Anchor",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "anchor_id",
+    "real_audience",
+    "real_action",
+    "observable_signal",
+    "stop_evidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "v1"
+    },
+    "anchor_id": {
+      "type": "string"
+    },
+    "real_audience": {
+      "type": "string"
+    },
+    "real_action": {
+      "type": "string"
+    },
+    "observable_signal": {
+      "type": "string"
+    },
+    "stop_evidence": {
+      "type": "string"
+    },
+    "artifact_to_send_or_show": {
+      "type": "string"
+    },
+    "time_window": {
+      "type": "string"
+    },
+    "claim_boundary": {
+      "type": "string"
+    },
+    "next_decision": {
+      "type": "string"
+    }
+  }
+}

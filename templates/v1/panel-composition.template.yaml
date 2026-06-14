@@ -1,0 +1,10 @@
+schema_version: v1
+run_id: ''
+perspectives: []
+composition_rationale: ''
+minimum_skepticism:
+  requires_skeptical_fit: true
+  requires_poor_fit: true
+  requires_negative_control: true
+negative_controls: []
+known_blind_spots: []

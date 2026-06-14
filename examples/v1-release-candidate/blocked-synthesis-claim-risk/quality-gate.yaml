@@ -1,0 +1,9 @@
+schema_version: v1
+gates:
+- gate_id: claim_safety
+  artifact: synthesis
+  verdict: block
+  required_fix: Replace validation language with cautious, directional synthesis and
+    a real anchor.
+  blocking_reason: The synthesis claims demand evidence from synthetic reactions.
+  reviewer_note: This is a release-blocking wording issue.

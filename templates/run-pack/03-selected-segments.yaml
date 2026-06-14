@@ -1,0 +1,121 @@
+# Purpose: Record the exact segment contexts used in this run.
+# When to fill: After 02-sampling-plan.yaml and before stimuli.
+# Previous file needed: 02-sampling-plan.yaml.
+# Next file: 04-stimuli.yaml.
+# Claim boundary: Selected segments are deliberate lenses, not a representative sample.
+# Data minimization: Avoid private names, contact details, account data, or confidential customer descriptions.
+run_id: ""
+source_note: "Use existing files from panels/general/ where possible. If drafting a segment, follow templates/add-segment/segment-template.yaml."
+segments:
+  - id: ""
+    name: ""
+    fit_type: "fitting"
+    source: ""
+    context: ""
+    problem_or_job: ""
+    constraints:
+      - ""
+    current_workarounds:
+      - ""
+    likely_objections:
+      - ""
+    trust_needs:
+      - ""
+    reachability:
+      - ""
+    exclusions:
+      - ""
+    bias_risks:
+      - ""
+    non_market_control: false
+  - id: ""
+    name: ""
+    fit_type: "adjacent"
+    source: ""
+    context: ""
+    problem_or_job: ""
+    constraints:
+      - ""
+    current_workarounds:
+      - ""
+    likely_objections:
+      - ""
+    trust_needs:
+      - ""
+    reachability:
+      - ""
+    exclusions:
+      - ""
+    bias_risks:
+      - ""
+    non_market_control: false
+  - id: ""
+    name: ""
+    fit_type: "skeptical"
+    source: ""
+    context: ""
+    problem_or_job: ""
+    constraints:
+      - ""
+    current_workarounds:
+      - ""
+    likely_objections:
+      - ""
+    trust_needs:
+      - ""
+    reachability:
+      - ""
+    exclusions:
+      - ""
+    bias_risks:
+      - ""
+    non_market_control: false
+  - id: ""
+    name: ""
+    fit_type: "poor_fit"
+    source: ""
+    context: ""
+    problem_or_job: ""
+    constraints:
+      - ""
+    current_workarounds:
+      - ""
+    likely_objections:
+      - ""
+    trust_needs:
+      - ""
+    reachability:
+      - ""
+    exclusions:
+      - ""
+    bias_risks:
+      - ""
+    non_market_control: false
+  - id: ""
+    name: ""
+    fit_type: "non_market_control"
+    source: ""
+    context: ""
+    problem_or_job: ""
+    constraints:
+      - ""
+    current_workarounds:
+      - ""
+    likely_objections:
+      - ""
+    trust_needs:
+      - ""
+    reachability:
+      - ""
+    exclusions:
+      - ""
+    bias_risks:
+      - ""
+    non_market_control: true
+review_checks:
+  segment_first_not_persona_first: true
+  includes_fitting: true
+  includes_adjacent: true
+  includes_skeptical: true
+  includes_poor_fit: true
+  includes_non_market_control: true

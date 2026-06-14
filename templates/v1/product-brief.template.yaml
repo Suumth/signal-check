@@ -1,0 +1,13 @@
+schema_version: v1
+idea_name: ''
+problem_context: ''
+target_user_or_segment: ''
+current_alternative: ''
+proposed_change: ''
+main_assumptions: []
+known_constraints: []
+out_of_scope: []
+unsafe_claims_to_avoid:
+- validated demand
+- representative results
+- purchase intent proven

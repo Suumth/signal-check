@@ -1,6 +1,8 @@
 # Workflow
 
-Signal Check is used manually. There is no CLI, API, Web UI, engine, or model adapter in v0.1.
+Signal Check is used manually. There is no CLI, API, Web UI, engine, or model adapter.
+
+For a complete ordered run folder, copy `templates/run-pack/` into `runs/<run-id>/`. The artifact order below remains the underlying method.
 
 ## Artifact Order
 
@@ -21,7 +23,7 @@ Use this order for a complete manual run:
 | Real anchor | `prompts/06-plan-real-validation.md` | `runs/<run>/smallest-real-anchor.md` |
 | Report | `templates/preflight-report.md` | `runs/<run>/preflight-report.md` |
 
-When an output has no dedicated template, keep the prompt output in a plain Markdown or YAML file in the run folder. Use `examples/searcue/` only as a completed shape reference.
+When an output has no dedicated template, keep the prompt output in a plain Markdown or YAML file in the run folder. Use `examples/v1-release-candidate/` only as a small public-safe shape reference.
 
 ## Sequence
 

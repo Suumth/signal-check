@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/v1/panel-composition.schema.json",
+  "title": "Panel Composition",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "perspectives",
+    "minimum_skepticism"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "v1"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "perspectives": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 3
+    },
+    "minimum_skepticism": {
+      "type": "object",
+      "required": [
+        "requires_skeptical_fit",
+        "requires_poor_fit",
+        "requires_negative_control"
+      ],
+      "properties": {
+        "requires_skeptical_fit": {
+          "const": true
+        },
+        "requires_poor_fit": {
+          "const": true
+        },
+        "requires_negative_control": {
+          "const": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "composition_rationale": {
+      "type": "string"
+    },
+    "negative_controls": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "known_blind_spots": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

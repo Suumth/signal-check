@@ -1,0 +1,56 @@
+# Purpose: Plan segment-first coverage and controls before stimuli or prompts.
+# When to fill: After 01-product-brief.md.
+# Previous file needed: 01-product-brief.md.
+# Next file: 03-selected-segments.yaml.
+# Claim boundary: Segment coverage organizes hypotheses; it is not representative evidence.
+# Data minimization: Reference reusable segment files or short sanitized descriptions instead of private audience data.
+run_id: ""
+brief: "01-product-brief.md"
+purpose: "Plan a manual Product Preflight. Do not treat outputs as validation."
+segment_first_rule: "Use segments, contexts, workflows, and constraints. Do not invent fictional personas."
+required_fit_types:
+  - "fitting"
+  - "adjacent"
+  - "skeptical"
+  - "poor_fit"
+  - "non_market_control"
+segments:
+  fitting:
+    - segment_id: ""
+      source: ""
+      reason_selected: ""
+  adjacent:
+    - segment_id: ""
+      source: ""
+      reason_selected: ""
+  skeptical:
+    - segment_id: ""
+      source: ""
+      reason_selected: ""
+  poor_fit:
+    - segment_id: ""
+      source: ""
+      reason_selected: ""
+non_market_control:
+  segment_id: ""
+  purpose: "Check that an irrelevant or poor-fit context does not become false support."
+negative_controls:
+  file: "05-negative-controls.yaml"
+prompt_robustness:
+  file: "06-prompt-robustness-plan.yaml"
+raw_response_policy:
+  file: "07-raw-responses.md"
+  save_before_summary: true
+  preserve_counter_evidence: true
+  separate_evidence_from_interpretation: true
+kill_criteria:
+  - criterion: ""
+    action_if_met: "stop | narrow | rerun"
+claim_limits:
+  no_validated_purchase_intent: true
+  no_representative_claims: true
+  no_real_user_voices: true
+  no_demand_prediction: true
+  no_synthetic_testimonials: true
+  no_score_as_proof: true
+smallest_real_anchor_required: true

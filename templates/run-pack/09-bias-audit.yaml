@@ -1,0 +1,62 @@
+# Purpose: Audit the run before summary or recommendation.
+# When to fill: After 08-scored-results.yaml and before the preflight report.
+# Previous file needed: 08-scored-results.yaml.
+# Next file: 10-preflight-report.md.
+# Claim boundary: Audit findings can lower confidence or force a rerun; they do not validate the idea.
+# Data minimization: Refer to evidence by file, segment, stimulus, or short excerpt rather than pasting large raw outputs.
+run_id: ""
+purpose: "Audit a manual Product Preflight before summary or recommendation."
+audit:
+  over_positivity:
+    signal: ""
+    evidence:
+      - ""
+    severity: "none | low | medium | high"
+  negative_control_failure:
+    signal: ""
+    evidence:
+      - ""
+    severity: "none | low | medium | high"
+  non_market_control_failure:
+    signal: ""
+    evidence:
+      - ""
+    severity: "none | low | medium | high"
+  prompt_sensitivity:
+    signal: ""
+    evidence:
+      - ""
+    severity: "none | low | medium | high"
+  cherry_picking_risk:
+    signal: ""
+    evidence:
+      - ""
+    severity: "none | low | medium | high"
+  response_collapse:
+    signal: ""
+    evidence:
+      - ""
+    severity: "none | low | medium | high"
+  segment_coverage_issue:
+    signal: ""
+    evidence:
+      - ""
+    severity: "none | low | medium | high"
+  claim_risk:
+    signal: ""
+    evidence:
+      - ""
+    severity: "none | low | medium | high"
+kill_criteria_result:
+  met:
+    - ""
+  not_met:
+    - ""
+  ambiguous:
+    - ""
+recommended_action: "keep | narrow | rerun | stop | run_smallest_real_anchor"
+confidence_after_audit: ""
+review_notes:
+  - "Strong audit signals should cause the result to be discarded, rerun, narrowed, or marked low confidence."
+  - "Positive reactions are not useful until negative controls and non-market controls have been checked."
+  - "Do not smooth away contradictions, weak fit, refusal, or missing counter-evidence."

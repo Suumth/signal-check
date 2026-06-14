@@ -1,0 +1,9 @@
+schema_version: v1
+controls:
+- control_id: ''
+  control_type: non_market | hype_language | false_partnership | weak_difference |
+    impossible_claim
+  purpose: ''
+  expected_reaction: ''
+  failure_signal: ''
+  recovery_action: ''

@@ -1,0 +1,16 @@
+schema_version: v1
+anchor_id: receipt-note-cleaner-anchor-001
+real_audience: 8 to 12 freelancers who already track expenses manually.
+real_action: Send a short concept note and ask for one anonymized example of a messy
+  receipt memo they would want cleaned.
+artifact_to_send_or_show: One paragraph concept note plus two before/after mock examples
+  clearly marked as mock examples.
+time_window: 5 business days.
+observable_signal: At least 3 people reply with a real or anonymized messy memo and
+  describe when it causes friction.
+stop_evidence: Most replies say the problem is too rare, already solved by their accounting
+  tool, or not worth a separate utility.
+claim_boundary: This tests problem recognition and willingness to share an example.
+  It does not establish demand or willingness to pay.
+next_decision: If the signal appears, build a clickable or script-based cleanup demo.
+  If not, narrow or stop.

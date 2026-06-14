@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/v1/negative-controls.schema.json",
+  "title": "Negative Controls",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "controls"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "v1"
+    },
+    "controls": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "control_id",
+          "control_type",
+          "purpose",
+          "expected_reaction",
+          "failure_signal",
+          "recovery_action"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "control_id": {
+            "type": "string"
+          },
+          "control_type": {
+            "enum": [
+              "non_market",
+              "hype_language",
+              "false_partnership",
+              "weak_difference",
+              "impossible_claim"
+            ]
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "expected_reaction": {
+            "type": "string"
+          },
+          "failure_signal": {
+            "type": "string"
+          },
+          "recovery_action": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+# Purpose: Plan prompt and context variants before interpreting patterns.
+# When to fill: After 05-negative-controls.yaml and before collecting raw responses.
+# Previous file needed: 05-negative-controls.yaml.
+# Next file: 07-raw-responses.md.
+# Claim boundary: A finding is unstable when it depends on prompt wording or missing context.
+# Data minimization: Variants should remove sensitive detail where possible and test whether conclusions survive.
+run_id: ""
+prompt_robustness_plan:
+  neutral_language: true
+  free_reaction_first: true
+  avoid_purchase_questions: true
+  require_counter_evidence: true
+  preserve_raw_outputs: true
+  compare_main_stimuli_against_negative_controls: true
+  include_non_market_control: true
+  rerun_variants:
+    - id: "concise_prompt"
+      purpose: "Check whether the finding survives with less framing."
+    - id: "neutral_prompt"
+      purpose: "Check whether enthusiasm drops when language is less leading."
+    - id: "skeptical_prompt"
+      purpose: "Check whether counter-evidence appears when skepticism is invited."
+    - id: "missing_context_prompt"
+      purpose: "Check whether the idea still makes sense without extra explanation."
+    - id: "negative_control_prompt"
+      purpose: "Check whether controls attract similar praise."
+  compare_for:
+    - "repeated confusion"
+    - "prompt-sensitive enthusiasm"
+    - "changed objections"
+    - "missing alternatives"
+    - "changed trust needs"
+    - "negative-control performance"
+    - "non-market-control performance"
+  stability_rule: "Treat a finding as stable only if it appears across neutral variants and is not stronger in a negative control."
+  unstable_finding_policy: "Mark prompt-sensitive findings as unstable. Do not use them as report conclusions."

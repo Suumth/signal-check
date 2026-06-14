@@ -1,0 +1,15 @@
+version: "1.0-rc.1"
+purpose: "Describe schema validation expectations without introducing a dependency-heavy validator."
+current_required_checks:
+  - "json_parse"
+  - "yaml_parse"
+future_optional_checks:
+  - "json_schema_conformance"
+  - "yaml_schema_mapping"
+minimum_schema_expectations:
+  - "Each schema declares $schema."
+  - "Each schema has a title."
+  - "Required method-critical fields are explicit."
+  - "Descriptions avoid implying market proof."
+notes:
+  - "Signal Check intentionally does not add a package manager or dependency-heavy schema validator."

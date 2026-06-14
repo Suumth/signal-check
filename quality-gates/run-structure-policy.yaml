@@ -1,0 +1,21 @@
+version: "1.0-rc.1"
+purpose: "Report whether repeatable Signal Check runs contain expected files."
+scan_roots:
+  - "runs"
+  - "examples"
+run_markers:
+  - "run-card.yaml"
+  - "run-index.md"
+  - "product-brief.md"
+required_when_marker_present:
+  - "product-brief.md"
+  - "sampling-plan.yaml"
+  - "stimuli.yaml"
+  - "smallest-real-anchor.md"
+recommended_when_marker_present:
+  - "negative-controls.yaml"
+  - "synthesis.md"
+  - "preflight-report.md"
+strict_mode: false
+notes:
+  - "Default mode reports warnings to support incremental adoption. Use --strict for release candidates."

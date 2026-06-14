@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/v1/bias-audit.schema.json",
+  "title": "Bias Audit",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "v1"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "prompt_leading_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "over_positive_patterns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "missing_skepticism": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "control_failures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interpretation_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_revisions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://signal-check.dev/schemas/v1/quality-gates.schema.json",
+  "title": "Quality Gates",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "gates"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "v1"
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "gate_id",
+          "artifact",
+          "verdict"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "gate_id": {
+            "type": "string"
+          },
+          "artifact": {
+            "type": "string"
+          },
+          "verdict": {
+            "enum": [
+              "ready",
+              "revise",
+              "block"
+            ]
+          },
+          "required_fix": {
+            "type": "string"
+          },
+          "blocking_reason": {
+            "type": "string"
+          },
+          "reviewer_note": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
