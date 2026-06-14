@@ -1,0 +1,13 @@
+negative_controls:
+  - id: hype_claim
+    purpose: "Detect whether exaggerated AI/payment claims perform too well."
+    expected_result: "Should trigger skepticism."
+  - id: wrong_audience
+    purpose: "Detect whether enterprise framing is incorrectly treated as relevant."
+    expected_result: "Should perform worse for freelancer segments."
+  - id: overbuilt_scope
+    purpose: "Detect whether users want full accounting instead of lightweight reminders."
+    expected_result: "Should reveal scope risk."
+  - id: guaranteed_outcome
+    purpose: "Detect dangerous promise of payment certainty."
+    expected_result: "Should be rejected as not credible."

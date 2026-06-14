@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+- Clarified Signal Check positioning for public use.
+- Added stronger limitations and claim-safety guidance.
+- Added qualitative scoring documentation.
+- Added quality gates.
+- Added guidance for using Signal Check before coding-agent implementation.
+- Added a public-safe Quiet Invoice mini example.
+- Added GitHub issue templates for feedback and example runs.
+
 ## Signal Check v1.0-rc.1 — Stable Method Kit Release Candidate
 
 ### Added

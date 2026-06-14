@@ -1,38 +1,89 @@
-# Limitation Statement
+# Limitations
 
-Signal Check has firm limits.
+Signal Check is a pre-build product judgment method.
 
-## Method limits
+It helps structure early thinking, compare messages, surface objections, and define a concrete next real-world validation step.
 
-Signal Check outputs are not evidence of:
+It does not prove demand.
 
-- market size
-- conversion likelihood
-- willingness to pay
-- buyer intent
-- user satisfaction
-- product-market fit
-- competitive defensibility
-- compliance suitability
+## Signal Check is not market research
 
-## Synthetic-output limits
+Signal Check is not:
 
-Synthetic perspectives can help reveal possible objections, unclear wording, and testable assumptions. They cannot tell you what real people will do.
+- a statistically representative study
+- a survey platform
+- a replacement for user interviews
+- a replacement for analytics
+- a replacement for customer discovery
+- a conversion predictor
+- proof of willingness to pay
+- proof of product-market fit
+- proof of demand
 
-## Decision limit
+Signal Check can help you prepare better research.
+It does not replace research.
 
-A Signal Check run should not end with "build it." It should end with a real next test.
+## Synthetic responses are not real users
 
-## Correct release framing
+LLM-generated reactions can be useful for pressure-testing clarity, assumptions, and likely objections.
 
-A public release should present Signal Check as a careful preflight method, not as an oracle.
+They should not be described as:
 
-## Required final artifact
+- user feedback
+- customer feedback
+- real customer feedback
+- market validation
+- validated learning
+- representative findings
+- statistically significant results
 
-Every complete run must produce a Smallest Real Anchor:
+Unless real people were involved, do not imply that real people were involved.
 
-- a real audience
-- a real artifact or question
-- a real contact or exposure path
-- a real observation window
-- a real stop or revise criterion
+## What Signal Check can do
+
+Signal Check can help you:
+
+- make a product idea more specific
+- identify unclear positioning
+- compare message variants
+- find likely objections
+- spot overclaims
+- identify weak assumptions
+- prepare a smaller real-world test
+- avoid building too much too early
+
+## What Signal Check cannot do
+
+Signal Check cannot tell you:
+
+- whether people will buy
+- whether a market exists
+- whether users will retain
+- whether a price is acceptable
+- whether a landing page will convert
+- whether a product will succeed
+- whether an idea is validated
+
+## Safe interpretation
+
+A good Signal Check run means:
+
+> This idea is clear enough to test.
+
+It does not mean:
+
+> This idea is validated.
+
+## Required next step
+
+Every Signal Check run should end with a smallest real-world validation step.
+
+Examples:
+
+- send a landing page to 20 target users
+- interview 5 people from the target segment
+- ask 10 people to explain what the product does
+- test two message variants with real traffic
+- show a prototype and observe where people misunderstand it
+
+Signal Check is strongest when it helps you decide what to test next.

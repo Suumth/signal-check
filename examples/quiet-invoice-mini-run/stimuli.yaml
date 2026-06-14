@@ -1,0 +1,16 @@
+stimuli:
+  - id: A_problem_led
+    type: "problem-led"
+    text: "Following up on unpaid invoices should not feel awkward."
+  - id: B_outcome_led
+    type: "outcome-led"
+    text: "A calm way for freelancers to track unpaid invoices and send professional reminders."
+  - id: C_category_led
+    type: "category-led"
+    text: "A lightweight invoice follow-up tool for freelancers."
+  - id: D_hype_negative_control
+    type: "negative-control"
+    text: "The AI-powered platform that guarantees freelancers get paid faster."
+  - id: E_enterprise_negative_control
+    type: "negative-control"
+    text: "A complete accounts receivable automation suite for modern finance teams."

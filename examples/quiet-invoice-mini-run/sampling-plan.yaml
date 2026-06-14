@@ -1,0 +1,18 @@
+sampling_plan:
+  run_id: quiet-invoice-mini-run
+  purpose: "Public-safe teaching example for a fictional product idea."
+  primary_segments:
+    - freelance_designer
+    - freelance_consultant
+    - creator_services
+  skeptical_or_edge_segments:
+    - agency_owner
+  non_market_control:
+    id: enterprise_finance_team
+    description: "A finance-team audience that would likely need a heavier accounts receivable workflow."
+  claim_boundaries:
+    no_market_research_claim: true
+    no_validated_demand_claim: true
+    no_representative_claim: true
+    no_real_customer_feedback_claim: true
+  note: "This example uses fictional, synthetic preflight material and does not include real user feedback."

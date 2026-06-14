@@ -1,66 +1,114 @@
 # Signal Check
 
-Signal Check is a file-based open-source method kit for checking product ideas before building them.
+**Signal Check is a lightweight open-source method kit for testing product ideas before you build.**
 
-It helps teams, indie founders, solo builders, product leads, and AI-assisted builders run a careful Product Preflight: frame an idea, choose segment-first perspectives, test messages, surface objections, audit bias, and end with the smallest real-world test worth doing next.
+It helps solo builders, indie makers, small product teams, and AI-assisted developers pressure-test early product decisions with structured prompts, negative controls, bias audits, and a concrete next real-world validation step.
+
+Signal Check does **not** replace user research, analytics, interviews, or market data.
+It gives you a disciplined preflight check before you spend serious time building.
+
+> Signal Check does not tell you whether an idea will succeed.
+> It helps you decide what to test next before you build too much.
 
 Signal Check is not an app, CLI, API, web app, model integration, or automated research system. It is a set of Markdown, YAML, JSON Schema, prompt, checklist, and contract files designed for manual use.
 
-## What It Helps With
+## Use Signal Check when you want to know
 
-- Clarify who an idea might be for.
-- Separate segments from invented personas.
-- Compare messages without treating reactions as proof.
-- Include fitting, adjacent, skeptical, poor-fit, and non-market-control perspectives.
-- Use negative controls to catch false support.
-- Check prompt robustness before trusting a pattern.
-- Preserve evidence, counter-evidence, uncertainty, and confidence notes.
-- Run a bias audit before summarizing.
-- Apply kill criteria.
-- Translate the run into a Smallest Real Anchor.
+- Is the product idea clear enough?
+- Who is it actually for?
+- Which message is strongest?
+- Which objections are most likely?
+- Where are we fooling ourselves?
+- What is the smallest real-world test we should run next?
 
-## What It Cannot Do
+## The core belief
 
-Signal Check has these claim boundaries:
+AI makes it easier than ever to build quickly.
+Signal Check helps you slow down just enough to build the right thing.
 
-- must not validate purchase intent or claim purchase intent has been measured
-- must not produce representative findings
-- must not create real user voices
-- must not make demand predictions
-- must not generate synthetic testimonials
-- must not replace user research
-- must not prove product-market fit
-- must not decide that you should build
+## What Signal Check produces
 
-Its output is directional preflight material. It can make the next real test clearer; it cannot make an idea true.
+A Signal Check run should end with a documented decision package:
 
-## How A Manual Run Works
+- product brief
+- target segments
+- message variants
+- negative controls
+- likely objections
+- bias audit
+- signal summary
+- smallest real-world validation step
 
-The fastest path is to copy the ordered run pack:
+The output is not a verdict.
+It is a clearer next decision.
 
-```text
-cp -R templates/run-pack runs/my-run
-```
+## Who Signal Check helps
 
-Then fill the files in numeric order:
+| User | Problem | How Signal Check helps |
+|---|---|---|
+| Solo builders | Can build faster than they can validate | Adds a structured decision gate before implementation |
+| Indie hackers | Have many ideas but limited time | Helps choose which idea or message deserves a real test |
+| AI-assisted developers | LLMs often sound too agreeable | Forces objections, negative controls, and bias checks |
+| Small product teams | Need lightweight discovery without heavy process | Creates a shared preflight document before sprint work |
+| Founders without research budget | Need direction before spending money | Provides a low-cost first pass before real-world validation |
+| Open-source maintainers | Need to explain value clearly | Tests whether the project's positioning is understandable |
+| Product marketers | Need sharper messaging | Compares message variants and likely objections |
 
-1. Set the run context.
-2. Write the product brief.
-3. Plan segment-first coverage.
-4. Select fitting, adjacent, skeptical, poor-fit, and non-market-control perspectives.
-5. Prepare stimuli and negative controls.
-6. Plan prompt-robustness variants.
-7. Save short raw reactions before interpreting.
-8. Classify reactions with evidence, counter-evidence, uncertainty, and confidence notes.
-9. Complete a bias audit.
-10. Write a claim-safe preflight report.
-11. Define the Smallest Real Anchor.
+## What Signal Check is
 
-There is no scoring engine. Use classifications as organizing lenses, not grades.
+Signal Check is a structured pre-build judgment process.
+
+It is especially useful before writing code, designing a landing page, creating a campaign, or asking an AI coding agent to build a feature.
+
+## What Signal Check is not
+
+Signal Check is not:
+
+- market research
+- a statistically representative study
+- a survey tool
+- a replacement for user interviews
+- a conversion predictor
+- proof of demand
+- proof of willingness to pay
+- a way to generate fake testimonials
+- a way to claim validation without real users
+
+Signal Check produces hypotheses, warnings, and next-test recommendations, not certainty.
+
+## Quickstart
+
+1. Copy the run pack from `templates/run-pack/`.
+2. Fill in the product brief.
+3. Define specific target segments.
+4. Add message variants and negative controls.
+5. Run the prompts.
+6. Score the results.
+7. Write a signal summary.
+8. Decide the smallest real-world test.
+
+Do not treat the output as validation.
+Use it to decide what to test next.
+
+## Decision outcomes
+
+Every Signal Check run should end with one of five decisions:
+
+| Decision | Meaning |
+|---|---|
+| Kill | The idea is too vague, too weak, too risky, or not meaningfully different. |
+| Reframe | The underlying problem may be real, but the current positioning is unclear. |
+| Narrow | The idea is too broad. Choose a smaller segment, use case, or trigger moment. |
+| Test | The signal is promising enough for a small real-world validation step. |
+| Build small | Only choose this if the next build is minimal, reversible, and directly connected to the strongest signal. |
 
 ## Important Files
 
 - `docs/quickstart.md` gets you through a first run.
+- `docs/limitations.md` states what Signal Check cannot prove.
+- `docs/scoring.md` explains qualitative scoring.
+- `docs/quality-gates.md` lists checks before trusting a run.
+- `docs/using-with-coding-agents.md` explains how to use Signal Check before coding-agent implementation.
 - `docs/workflow.md` explains the manual artifact order.
 - `docs/method-boundaries.md` states what Signal Check can and cannot establish.
 - `docs/manual-run-protocol.md` describes a complete manual run.
@@ -68,21 +116,19 @@ There is no scoring engine. Use classifications as organizing lenses, not grades
 - `docs/public-trust-statement.md` gives public wording boundaries.
 - `contracts/v1/` defines stable v1 artifact contracts.
 - `templates/run-pack/` is the copyable full run folder.
-- `templates/v1/` contains compact v1 artifact templates.
 - `schemas/v1/` contains v1 JSON Schemas.
 - `prompts/v1/` contains release-candidate review prompts.
 - `checklists/` contains operator, claim-safety, method-contract, and release-readiness checks.
 - `quality-gates/` and `tools/quality/` contain optional maintainer validation checks.
 
-## Examples
+## Example
 
-Use `examples/v1-release-candidate/` for small, public-safe teaching examples:
+See:
+`examples/quiet-invoice-mini-run/`
 
-- `compact-product-brief/` shows a narrow, claim-safe product brief.
-- `blocked-synthesis-claim-risk/` shows a synthesis that must be blocked and repaired.
-- `real-anchor-ready/` shows a Smallest Real Anchor that moves outside the prompt environment.
+This is a small public-safe example for a fictional product idea called Quiet Invoice.
 
-Examples are teaching artifacts. They are not proof that any product should be built.
+Additional release-candidate teaching examples live in `examples/v1-release-candidate/`. Examples are teaching artifacts. They are not proof that any product should be built.
 
 ## Contributing
 

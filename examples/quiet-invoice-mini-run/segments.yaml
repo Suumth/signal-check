@@ -1,0 +1,21 @@
+segments:
+  - id: freelance_designer
+    description: "Independent designers who invoice small business clients."
+    likely_problem: "Awkward follow-up after unpaid invoices."
+    reachability: "High"
+    risk: "May already use accounting software."
+  - id: freelance_consultant
+    description: "Solo consultants with a small number of larger clients."
+    likely_problem: "Need professional reminders without damaging relationships."
+    reachability: "Medium"
+    risk: "May handle invoices manually and infrequently."
+  - id: creator_services
+    description: "Small creative service providers such as photographers, editors, and copywriters."
+    likely_problem: "Payment follow-up is emotionally uncomfortable."
+    reachability: "High"
+    risk: "May prefer templates over a dedicated tool."
+  - id: agency_owner
+    description: "Small agency owners managing multiple invoices."
+    likely_problem: "Need overview and follow-up workflows."
+    reachability: "Medium"
+    risk: "Needs may exceed lightweight scope."

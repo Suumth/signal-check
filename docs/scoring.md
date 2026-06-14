@@ -1,44 +1,110 @@
 # Scoring
 
-Signal Check uses scoring only as structured classification against anchors.
+Signal Check uses qualitative scoring to support better judgment.
 
-The purpose is not to validate an idea. The purpose is to make interpretation explicit enough that another person can see the evidence, caveat, and uncertainty behind each judgment.
+The score is not scientific.
+It is not statistically valid.
+It is not proof of demand.
 
-Recommended dimensions:
+The score helps compare product ideas, message variants, and pre-build assumptions in a more structured way.
 
-- comprehension
-- problem recognition
-- urgency
-- current workaround
-- trust friction
-- switching friction
-- differentiation
-- real-world next step
-- compatibility or boundary clarity when relevant
+## Signal levels
 
-Each dimension should include:
+### Strong signal
 
-- anchor label
-- evidence excerpt or observation
-- counter-evidence
-- uncertainty note
-- confidence note in plain language
-- negative-control relevance
-- reviewer note
+A strong signal means:
 
-Avoid single-number summaries. If a summary is needed, use language such as weak, mixed, directional, insufficient, or worth a real anchor. Never present a score as demand, purchase likelihood, representative evidence, or validation.
+- the target user is specific
+- the problem is easy to understand
+- the message is concrete
+- objections are manageable
+- negative controls perform worse than real stimuli
+- the next real-world test is obvious
 
-Scoring should answer:
+Strong signal does **not** mean the idea is validated.
+It means the idea is clear enough to test with real people.
 
-- What did the reaction suggest?
-- What evidence supports that reading?
-- What counter-evidence weakens it?
-- What remains uncertain?
-- Did negative controls or prompt sensitivity reduce confidence?
+### Mixed signal
 
-Scoring should not answer:
+A mixed signal means:
 
-- Will people buy?
-- How large is the market?
-- Is the idea validated?
-- What grade does the product deserve?
+- some segments react positively
+- others misunderstand the product
+- message variants perform unevenly
+- objections are meaningful but not fatal
+- more narrowing is needed before building
+
+Mixed signal usually means: refine positioning or segment focus before implementation.
+
+### Weak signal
+
+A weak signal means:
+
+- the product sounds vague
+- users do not understand the value quickly
+- objections dominate
+- negative controls perform similarly to real messages
+- the next real-world test is unclear
+
+Weak signal usually means: do not build yet.
+
+### Invalid signal
+
+An invalid signal means the run cannot be trusted.
+
+Common causes:
+
+- the input brief is too vague
+- the model was asked leading questions
+- responses are overly enthusiastic
+- the run contains fake certainty
+- negative controls were not used
+- no counter-evidence was captured
+- the output claims validation without real users
+
+## Signal scoring rubric
+
+Rate each dimension from 0 to 3.
+
+| Dimension | 0 | 1 | 2 | 3 |
+|---|---|---|---|---|
+| Problem clarity | Unclear | Somewhat understandable | Clear but broad | Immediately clear and specific |
+| Segment specificity | Everyone | Broad audience | Plausible segment | Narrow, reachable segment |
+| Message clarity | Abstract | Understandable with effort | Mostly clear | Clear in under 10 seconds |
+| Objection load | Fatal objections | Many unresolved objections | Manageable objections | Objections are known and testable |
+| Negative control separation | No separation | Weak separation | Moderate separation | Clear separation |
+| Real-test readiness | No next step | Vague next step | Plausible next step | Concrete test with audience, stimulus, and success rule |
+
+## Suggested interpretation
+
+| Total | Interpretation |
+|---:|---|
+| 0-6 | Do not build. Reframe the idea. |
+| 7-11 | Weak signal. Narrow the audience or message. |
+| 12-15 | Mixed signal. Run a small real-world test before building. |
+| 16-18 | Strong preflight signal. Build only the smallest testable version. |
+
+## Important rule
+
+A high score is not validation.
+
+A high score means:
+
+> The idea is coherent enough to test.
+
+It does not mean:
+
+> The market has validated the idea.
+
+## Score with counter-evidence
+
+Every score should include:
+
+- what worked
+- what failed
+- what was unclear
+- what objections appeared
+- what negative controls revealed
+- what still needs real-world testing
+
+Never report a score without the main reasons behind it.
