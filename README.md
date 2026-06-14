@@ -21,16 +21,16 @@ Signal Check is not an app, CLI, API, web app, model integration, or automated r
 
 ## What It Cannot Do
 
-Signal Check does not:
+Signal Check has these claim boundaries:
 
-- Do not use it to validate purchase intent.
-- Do not use it to produce representative findings.
-- Do not use it to create real user voices.
-- Do not use it to predict demand.
-- Do not use it to generate synthetic testimonials.
-- Do not use it to replace user research.
-- Do not use it to prove product-market fit.
-- Do not use it to decide that you should build.
+- must not validate purchase intent or claim purchase intent has been measured
+- must not produce representative findings
+- must not create real user voices
+- must not make demand predictions
+- must not generate synthetic testimonials
+- must not replace user research
+- must not prove product-market fit
+- must not decide that you should build
 
 Its output is directional preflight material. It can make the next real test clearer; it cannot make an idea true.
 

@@ -1,6 +1,6 @@
 # Methodology
 
-Signal Check v0.1 uses a manual Product Preflight workflow. The method has eight phases.
+Signal Check uses a manual Product Preflight workflow. The method has eight phases.
 
 ## 1. Frame The Idea
 

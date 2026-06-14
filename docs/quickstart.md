@@ -2,7 +2,7 @@
 
 Signal Check is run by copying files, filling them in, and using the prompts manually. There is no CLI, API, Web UI, engine, or model integration.
 
-For a complete ordered folder, copy `templates/run-pack/` into `runs/<run-id>/` and fill the files in numeric order. The individual templates remain available when you want to assemble a smaller custom run.
+Start with `templates/run-pack/` for a complete manual run skeleton. Copy it into `runs/<run-id>/` and fill the files in numeric order. Use individual templates only when extending or repairing a run.
 
 Use `examples/v1-release-candidate/` for small, public-safe teaching examples. Do not treat examples as product evidence.
 
@@ -16,7 +16,7 @@ runs/my-idea/
 
 Fast path: copy `templates/run-pack/` into `runs/my-idea/`.
 
-Custom path: copy these individual files into it:
+For custom repairs or extensions, copy individual files as needed:
 
 - `templates/product-brief.md`
 - `templates/sampling-plan.yaml`
