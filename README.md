@@ -36,7 +36,7 @@ A Signal Check run should end with a documented decision package:
 - negative controls
 - likely objections
 - bias audit
-- signal summary
+- preflight report
 - smallest real-world validation step
 
 The output is not a verdict.
@@ -84,11 +84,22 @@ Signal Check produces hypotheses, warnings, and next-test recommendations, not c
 4. Add message variants and negative controls.
 5. Run the prompts.
 6. Score the results.
-7. Write a signal summary.
+7. Write a preflight report.
 8. Decide the smallest real-world test.
 
 Do not treat the output as validation.
 Use it to decide what to test next.
+
+## Choose the right depth
+
+Not every question needs a full run.
+
+- Use a normal chat answer for small, reversible wording or feature questions.
+- Use a Quick Run for lightweight positioning, copy, or message checks.
+- Use a Full Run for product, segment, homepage, beta, or build-prioritization decisions.
+- Use real-world testing when the question depends on demand, willingness to pay, conversion, trust, compliance, or actual behavior.
+
+See `docs/choose-run-depth.md`.
 
 ## Optional companion agent
 
@@ -113,6 +124,10 @@ Every Signal Check run should end with one of five decisions:
 ## Important Files
 
 - `docs/quickstart.md` gets you through a first run.
+- `docs/choose-run-depth.md` helps choose between chat, Quick Run, Full Run, and real-world testing.
+- `docs/quick-run.md` explains the lightweight run mode.
+- `docs/run-artifact-names.md` defines canonical run artifact names.
+- `docs/run-storage.md` explains where public examples and private runs should live.
 - `docs/limitations.md` states what Signal Check cannot prove.
 - `docs/scoring.md` explains qualitative scoring.
 - `docs/quality-gates.md` lists checks before trusting a run.
@@ -125,6 +140,7 @@ Every Signal Check run should end with one of five decisions:
 - `docs/public-trust-statement.md` gives public wording boundaries.
 - `contracts/v1/` defines stable v1 artifact contracts.
 - `templates/run-pack/` is the copyable full run folder.
+- `templates/quick-run/` contains the copyable Quick Run template.
 - `schemas/v1/` contains v1 JSON Schemas.
 - `prompts/v1/` contains release-candidate review prompts.
 - `checklists/` contains operator, claim-safety, method-contract, and release-readiness checks.
@@ -156,6 +172,16 @@ Read:
 ## Repository Boundary
 
 Signal Check should stay public, small, and method-focused. Do not add private runs, customer data, large raw responses, media assets, website code, app code, package-manager setup, or runtime implementation unless a future version explicitly changes scope.
+
+Private or internal Signal Check runs should not be committed to this repository.
+Use `examples/` only for small, public-safe teaching examples.
+For private runs, use a local folder outside the repo, such as:
+
+```text
+../_local-runs/signal-check/<run-id>/
+```
+
+See `docs/run-storage.md`.
 
 ## License
 

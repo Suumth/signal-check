@@ -14,8 +14,9 @@ required_when_marker_present:
   - "smallest-real-anchor.md"
 recommended_when_marker_present:
   - "negative-controls.yaml"
-  - "synthesis.md"
   - "preflight-report.md"
 strict_mode: false
 notes:
   - "Default mode reports warnings to support incremental adoption. Use --strict for release candidates."
+  - "For numbered full run packs, 10-preflight-report.md is the numbered equivalent of preflight-report.md."
+  - "synthesis.md and signal-summary.md are not canonical final artifacts for new runs."

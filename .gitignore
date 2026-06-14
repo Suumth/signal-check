@@ -2,3 +2,20 @@ node_modules/
 coverage/
 .DS_Store
 *.log
+
+# Signal Check local/private runs
+_local-runs/
+local-runs/
+# Keep top-level runs local by default.
+runs/*
+!runs/README.md
+# Common private run names
+runs/_private/
+runs/private/
+runs/internal/
+runs/local/
+runs/tmp/
+# Private working artifacts
+*.private.md
+*.internal.md
+*.sensitive.md

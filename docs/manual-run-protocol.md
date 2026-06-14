@@ -170,18 +170,39 @@ Examples:
 
 ## Minimum output set
 
-A complete manual run folder should include:
+A complete manual run folder should include either the numbered run-pack form or the compact public-example form.
+
+### Numbered full run-pack form
+
+```text
+00-run-context.md
+01-product-brief.md
+02-sampling-plan.yaml
+03-selected-segments.yaml
+04-stimuli.yaml
+05-negative-controls.yaml
+06-prompt-robustness-plan.yaml
+07-raw-responses.md
+08-scored-results.yaml
+09-bias-audit.yaml
+10-preflight-report.md
+11-smallest-real-anchor.md
+```
+
+### Compact public-example form
 
 ```text
 product-brief.md
 sampling-plan.yaml
 stimuli.yaml
 negative-controls.yaml
-prompt-robustness-plan.yaml
-raw-reactions.md
-synthesis.md
+preflight-report.md
 smallest-real-anchor.md
 ```
+
+preflight-report.md or 10-preflight-report.md is the canonical final interpretation artifact.
+
+Do not use signal-summary.md for new official examples or templates.
 
 ## Failure conditions
 

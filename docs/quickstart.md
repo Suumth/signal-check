@@ -2,7 +2,11 @@
 
 Signal Check is run by copying files, filling them in, and using the prompts manually. There is no CLI, API, Web UI, engine, or model integration.
 
-Start with `templates/run-pack/` for a complete manual run skeleton. Copy it into `runs/<run-id>/` and fill the files in numeric order. Use individual templates only when extending or repairing a run.
+Before creating a run folder, choose the right depth.
+Use `docs/choose-run-depth.md` to decide whether the question needs a normal chat answer, a Quick Run, a Full Run, or a real-world test.
+
+For smaller questions, use the Quick Run template in `templates/quick-run/`.
+For full traceability, use the complete run pack in `templates/run-pack/`.
 
 Optional: use `docs/companion-agent.md` if you want to configure a Custom GPT companion for guided runs. The manual file-based workflow remains the source of truth.
 
@@ -10,13 +14,27 @@ Use `examples/v1-release-candidate/` for small, public-safe teaching examples. D
 
 ## 1. Create A Run Folder
 
-Create a local folder under `runs/`:
+For private or internal work, create the run outside the public repository:
 
 ```text
-runs/my-idea/
+../_local-runs/signal-check/my-idea/
 ```
 
-Fast path: copy `templates/run-pack/` into `runs/my-idea/`.
+Fast path: copy `templates/run-pack/` into that folder.
+
+For temporary local work inside a repository clone, use:
+
+```text
+_local-runs/my-idea/
+```
+
+For public-safe teaching examples, use:
+
+```text
+examples/my-public-safe-example/
+```
+
+Do not commit private runs. See `docs/run-storage.md`.
 
 For custom repairs or extensions, copy individual files as needed:
 
@@ -36,22 +54,22 @@ Use `examples/v1-release-candidate/` as a shape reference when needed.
 ## 2. Run The Preflight
 
 1. Read `README.md`.
-2. Fill `runs/my-idea/product-brief.md`.
-3. Fill `runs/my-idea/sampling-plan.yaml`.
+2. Fill `product-brief.md` in your run folder.
+3. Fill `sampling-plan.yaml`.
 4. Choose at least four segment files from `panels/general/`: fitting, adjacent, skeptical, and poor-fit.
 5. Add or identify a non-market control when false support is a risk.
-6. Fill `runs/my-idea/negative-controls.yaml`.
-7. Fill `runs/my-idea/prompt-robustness-plan.yaml`.
-8. Fill `runs/my-idea/stimuli.yaml` with one or two main stimuli and explicit claim boundaries.
+6. Fill `negative-controls.yaml`.
+7. Fill `prompt-robustness-plan.yaml`.
+8. Fill `stimuli.yaml` with one or two main stimuli and explicit claim boundaries.
 9. Run `prompts/01-generate-blind-panel.md` manually.
 10. Run `prompts/02-elicit-neutral-reactions.md` manually and save outputs in `raw-responses.md` before any summary.
 11. Run `prompts/03-score-against-anchors.md` manually and save outputs in `scored-results.yaml`.
 12. Run `prompts/04-audit-bias.md` manually and save outputs in `bias-audit.yaml`.
 13. Run `prompts/05-summarize-without-cherry-picking.md` manually.
 14. Apply kill criteria before deciding what to keep.
-15. Complete `runs/my-idea/preflight-report.md`.
+15. Complete `preflight-report.md`.
 16. Run `prompts/06-plan-real-validation.md` manually.
-17. Fill `runs/my-idea/smallest-real-anchor.md`.
+17. Fill `smallest-real-anchor.md`.
 
 ## 3. Stop Conditions
 

@@ -6,11 +6,31 @@ A Run Pack is not a CLI, engine, model integration, API, Web UI, or automated an
 
 ## How To Use It
 
-1. Copy the entire `templates/run-pack/` folder into `runs/<run-id>/`.
-2. Rename the copied folder if needed so the path is `runs/<run-id>/`.
+1. Copy the entire `templates/run-pack/` folder into a private run location.
+2. Rename the copied folder if needed so the path is your chosen run ID.
 3. Fill the files in numeric order.
 4. Keep raw prompt outputs short, relevant, and separated from interpretation.
 5. End the run with `11-smallest-real-anchor.md`.
+
+For private or internal runs, prefer copying this folder outside the public repository:
+
+```text
+../_local-runs/signal-check/<run-id>/
+```
+
+For temporary local work inside a repository clone, use:
+
+```text
+_local-runs/<run-id>/
+```
+
+Only curate intentionally public-safe teaching examples under:
+
+```text
+examples/<example-id>/
+```
+
+Do not commit private runs.
 
 Do not copy confidential product plans, customer records, private research notes, credentials, or large internal data dumps into a public repository run. If a run uses sensitive context, minimize it, sanitize it, or keep the run outside the public repo.
 
