@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Signal Check Run Assistant Final Review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "decision",
+    "reviewed_files",
+    "findings",
+    "recommended_next_action"
+  ],
+  "properties": {
+    "decision": {
+      "type": "string",
+      "enum": [
+        "READY_TO_BUILD_CUSTOM_GPT",
+        "POLISH_RECOMMENDED",
+        "BLOCKED"
+      ]
+    },
+    "reviewed_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "severity",
+          "summary"
+        ],
+        "properties": {
+          "severity": {
+            "type": "string",
+            "enum": [
+              "blocker",
+              "polish",
+              "note"
+            ]
+          },
+          "summary": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "validation": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "recommended_next_action": {
+      "type": "string"
+    }
+  }
+}
