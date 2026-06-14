@@ -96,6 +96,9 @@ It does not mean:
 
 > The market has validated the idea.
 
+A score should never be reported without the remaining unknowns.
+High preflight signal means the idea may be clear enough to test. It does not reduce the need to state what the run still does not know.
+
 ## Score with counter-evidence
 
 Every score should include:

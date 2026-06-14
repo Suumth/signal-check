@@ -53,6 +53,16 @@ A useful Signal Check output includes:
 - decision recommendation
 - smallest real-world validation step
 
+A useful preflight report must include a section called:
+
+```text
+What This Run Still Does Not Know
+```
+
+This section should name the real-world unknowns that Signal Check cannot answer.
+
+A report without remaining uncertainty is suspicious, not strong.
+
 A weak output usually contains:
 
 - generic praise

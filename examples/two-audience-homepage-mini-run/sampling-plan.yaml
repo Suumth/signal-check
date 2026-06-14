@@ -1,0 +1,37 @@
+run_id: "two-audience-homepage-mini-run"
+purpose: "Public-safe example for comparing homepage story structures."
+segments:
+  - id: "practical_product_buyer"
+    fit_type: "fitting"
+    context: "Cares mainly about the concrete proof product and wants to understand what it does quickly."
+    likely_need: "A clear product example early."
+    likely_objection: "A product lab frame may feel abstract or irrelevant."
+  - id: "professional_credibility_visitor"
+    fit_type: "fitting"
+    context: "Evaluates the builder's product judgment, method, and quality of execution."
+    likely_need: "Evidence of practical product thinking without CV-style self-promotion."
+    likely_objection: "A single proof product may make the lab feel too narrow."
+  - id: "skeptical_visitor"
+    fit_type: "skeptical"
+    context: "Suspicious of vague premium language, AI-studio claims, and self-described innovation."
+    likely_need: "Concrete proof and bounded claims."
+    likely_objection: "The page may sound polished but unclear."
+  - id: "agency_prospect"
+    fit_type: "poor_fit"
+    context: "Looks for a service provider or agency."
+    likely_need: "Services, packages, or client case studies."
+    likely_objection: "A product-lab homepage may not offer what they are looking for."
+  - id: "non_market_control"
+    fit_type: "non_market_control"
+    context: "Not evaluating product labs, proof products, or builder credibility."
+    likely_need: "No relevant need."
+    likely_objection: "The page may be irrelevant even if it sounds polished."
+required_controls:
+  skeptical_segment: true
+  poor_fit_segment: true
+  non_market_control: true
+claim_limits:
+  no_validation_claim: true
+  no_representative_claim: true
+  no_real_user_voice_claim: true
+  no_market_proof_claim: true

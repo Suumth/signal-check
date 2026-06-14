@@ -35,6 +35,17 @@ Data minimization: Summarize only the evidence needed for decision hygiene. Do n
 
 <!-- State the bounded hypothesis this run supports or weakens. Also state what remains unknown. -->
 
+## What This Run Still Does Not Know
+
+<!-- Name the important unknowns that require real-world evidence. -->
+This run still does not know:
+- whether real people in the target segment care in a real context
+- whether anyone would pay, sign up, reply, click, retain, or recommend
+- whether the strongest message works outside the prompt environment
+- whether the assumed segment is reachable
+- whether the proposed behavior change is realistic
+- whether trust, timing, channel, or switching costs block adoption
+
 ## Evidence
 
 -
